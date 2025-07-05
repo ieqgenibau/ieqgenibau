@@ -26,13 +26,16 @@ html {
 }
 
 body{
+    overflow-x: hidden;
     background: #F2F2F2 ;
     width:100vw;
     background-size: cover;
     z-index: 10;
     display: flex; /*leva o footer para o fundo da página*/
     flex-direction: column;/*leva o footer para o fundo da página*/   
+    justify-content: center;
 }
+
 main{
     background: #F2F2F2 ;
     background-size: cover;
