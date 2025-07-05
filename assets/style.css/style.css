@@ -28,6 +28,7 @@ html {
 
 body{
     background: #F2F2F2 ;
+    width:100%;
     background-size: cover;
     z-index: 10;
     display: flex; /*leva o footer para o fundo da página*/
