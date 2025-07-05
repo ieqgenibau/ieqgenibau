@@ -22,13 +22,12 @@ html, body {
 
 html {
   overflow-x: hidden;
-  width: 100%;
-  max-width: 100%;  
+  width: 100vw;  
 }
 
 body{
     background: #F2F2F2 ;
-    width:100%;
+    width:100vw;
     background-size: cover;
     z-index: 10;
     display: flex; /*leva o footer para o fundo da página*/
