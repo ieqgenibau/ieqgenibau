@@ -14,32 +14,43 @@
     letter-spacing: 1px; 
  
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   overflow-x: hidden;
   width: 100%;
-  max-width: 100%;
-  height: 100%;
+  max-width: 100%;  
 }
 
 body{
-    overflow-x: hidden;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    min-height: 100vh;
-    background: linear-gradient(#ECEFFE, #CED6FB);
+    background: #F2F2F2 ;
+    background-size: cover;
+    z-index: 10;
+    display: flex; /*leva o footer para o fundo da página*/
+    flex-direction: column;/*leva o footer para o fundo da página*/   
+}
+main{
+    background: #F2F2F2 ;
+    background-size: cover;
+    flex: 1;  
+    
 }
 
 .imgfrente {
     background: url('../img/frente.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100vw;
-    height: 92vh;
+    background-size: cover;/*preenche todo o espaço com a imagem de fundo*/
+    background-position: center;
+    padding: 40px 20px;
+    width: 100vw;    
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    opacity: 0.7;    
+    opacity: 0.8;    
     
 }
 
@@ -281,6 +292,13 @@ img.logo {
   
   width: 30px;
   height: 30px;
+  border-radius: 7px;  
+  transition: all 0.3s ease;  
+}
+
+.social-icones img:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.575);
 }
 nav{
     display: flex;
@@ -295,6 +313,7 @@ nav{
     box-shadow: 0 3px 10px #C4D2D2;
     transition: box-shadow 0.3s ease;  
     white-space: nowrap;  
+     
 }
     nav:hover {
     box-shadow: 0px 5px 10px #C4D2D2;
@@ -302,23 +321,24 @@ nav{
 }
 /*até aqui*/
 
-main{
-    background: #F2F2F2 ;
-    background-size: cover;
-    height: 92vh;
-    
-}
-
 .nav-list{
     list-style:none;
-    display: flex;
+    display: flex;     
 }
+
 
 .nav-list li{
     letter-spacing: 3px;
     margin-left: 32px;
+    transition: all 0.3s ease;  
 }
 
+.nav-list li:hover{
+    transform: translateY(-3px) scale(1.2) ;    
+}
+.nav-list li a:hover{
+  color: #07b7fdd7; /* Cor ao passar o mouse */
+}
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -331,16 +351,19 @@ main{
     transition: 0.3s;
 }
 
-footer{
+.footer-cont {
     background-color:#23232e ;    
-    width: 100%;     
-
+    width: 100vw;
+    justify-content: space-around;
+    height: auto;
+    
 }
+
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3rem 3.5rem;
+  padding: 0.5rem 3.5rem;
   align-items: center;
   gap: 2rem;
 }
@@ -350,12 +373,13 @@ footer{
     align-items: flex-start; 
 }
 .footer-content h1{
-    text-align: justify;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;    
     font-size: 1rem;
-    line-height:1.5; 
+    line-height:1; 
     margin-bottom: 1rem; 
     color: white;
+    font-family: "Matangi", sans-serif;
+    font-size: 14px;
 }
 .logofooter{
     width:100%;
@@ -375,15 +399,25 @@ footer{
 .social-footer img {
   
   width: 30px;
-  height: 30px;
+  height: 40px;
+  transition: box-shadow 0.3s ease;  
+  transition: all 0.3s ease;   
+
 }
+.social-footer img:hover{
+    transform: translateY(-3px);   
+}
+
 .footer-copyright{
     justify-content: center;
     display: flex;
     background-color: #000;
     color: white;
-    padding: 1.5rem;
+    padding: 1rem;
     font-weight: 100;
+    font-size: 12px;
+    align-items: center;
+    height: 1px;
     
 }
 @media screen and (max-width:999px){
