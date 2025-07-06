@@ -253,7 +253,7 @@ nav{
 
     .nav-list{
         
-        position:absolute;
+        position:fixed;
         left: 0;        
         top: 24vh;
         right: 0;
