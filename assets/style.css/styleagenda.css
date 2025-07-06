@@ -28,11 +28,12 @@ body{
 }
 main{
     background: #F2F2F2 ;  
-    flex: 1;      
+    flex: 1;   
+     
 }
 
 .home{
-    margin: 0;    
+    margin-bottom: 250px;  
     min-height: 100vh; 
 }
 
@@ -41,7 +42,7 @@ main{
     text-decoration: none;
     transition: 0.3s;
     text-align:end;
-}                                                                                         .nav-bar a:hover{
+}                                                                  .nav-bar a:hover{
     opacity: 0.7;
 }
 p{
