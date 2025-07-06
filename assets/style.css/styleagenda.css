@@ -29,6 +29,8 @@ body{
     flex-direction: column;/*leva o footer para o fundo da página*/
     background: linear-gradient(#ECEFFE, #CED6FB);    
     min-height: 100vh;
+    justify-content:space-between;
+    overflow-x: hidden;
 }
 main{
     background: #F2F2F2 ;
