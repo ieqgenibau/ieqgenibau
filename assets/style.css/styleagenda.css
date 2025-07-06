@@ -21,28 +21,30 @@ html {
   width: 100%;
   max-width: 100%;  
   height: 100%;
+  margin: 0;
+  min-height: 100vh;
 }
 
 body{
-    background: #F2F2F2 ;    
+    background: #F2F2F2 ;
+    background-size: cover;
+    z-index: 10;
     display: flex; /*leva o footer para o fundo da página*/
     flex-direction: column;/*leva o footer para o fundo da página*/
-    background: linear-gradient(#ECEFFE, #CED6FB);    
-    min-height: 100vh;
+    background: linear-gradient(#ECEFFE, #CED6FB);
     justify-content:space-between;
     overflow-x: hidden;
+    height: 100%;    
+      
 }
 main{
     background: #F2F2F2 ;
     background-size: cover;    
     flex: 1;  
+    z-index: 1;
     position: relative;
     
 }
-/*.home{
-    margin-bottom: 250px;  
-    min-height: 100vh; 
-}*/
 
 .nav-bar a{
     color: #fff;
@@ -110,7 +112,6 @@ img.logo {
   /* elimina espaços em linha nos navegadores */
 }
 
-
 .social-bar{
     background-color:#C4D2D2;
     display: flex;
@@ -119,8 +120,7 @@ img.logo {
     width: 100%;
     height: 9vh;
     background-size: cover;
- 
-}
+ }
 
 .social-icones{
 
@@ -198,6 +198,7 @@ nav{
     width: 100vw;
     justify-content: space-around;
     height: auto;
+    margin-top: auto;
     
 }
 
@@ -268,17 +269,18 @@ nav{
         
         position:fixed;
         left: 0;        
-        top: 24vh;
+        top: 34vh;
         right: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #23232e;
+        width: 100%;
+        background: #ee9623;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        z-index: 10;      
+        z-index: 10; 
+        overflow-y: auto;
+        height: calc(100vh - 24vh);     
         
     }
     .nav-list li{
@@ -357,10 +359,10 @@ nav{
     }
     
 }
-body.overlay-ativo main {
-  display: none;
+    body.overlay-ativo main,
+    body.overlay-ativo footer {
+    display: none;
 }
-
 .mobile-menu.ativo .line1{
     transform: rotate(-45deg) translate(-8px, 8px);
 
