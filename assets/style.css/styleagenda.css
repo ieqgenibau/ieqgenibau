@@ -49,6 +49,12 @@ main{
     position: relative;
     
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
 .nav-bar a{
     color: white;
