@@ -311,6 +311,11 @@ img.logo {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.575);
 }
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -319,7 +324,7 @@ nav{
     background: #23232e;
     height: 25vh;    
     /*fiz uma alteração aqui para colocar sombra na Nav*/
-    position: fixed;
+    position: relative;
     box-shadow: 0 3px 10px #C4D2D2;
     transition: box-shadow 0.3s ease;  
     white-space: nowrap;       
