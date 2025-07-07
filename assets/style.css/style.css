@@ -470,6 +470,13 @@ nav{
         transform: scale(1.2); 
         font-weight:bolder;
 }
+    .navbar .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        background: #fff; /* ou a cor do seu navbar */
+        z-index: 999;
+}
     .nav-bar{
         transition: all 0.3s ease;  
         z-index: 10;
