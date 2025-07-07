@@ -320,7 +320,7 @@ img.logo {
 .social-icones .social-link:hover{
     opacity: 0.8;
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.575);
+    
 }
 #instagram{
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
@@ -556,8 +556,13 @@ nav{
     
 }
 
+    .social-footer {
+        justify-content: center;
+        margin-left: 40px;
+}
 
 }
+    
 
 @media screen and (min-width: 726px) {
 
@@ -570,6 +575,9 @@ nav{
     width: 140px;
 }
 
+.social-footer img{
+    width: 40px;
+}
 }
 
 @keyframes navLinkFade{
