@@ -290,27 +290,11 @@ nav{
     height: auto;
     
 }
-.social-footer{
-  width:100%;
-  display: flex;   
-  gap: 1.5rem;
-  justify-content:center;
-  
-}
+
 .footer-content a{
     text-align: center;
 }
-.social-footer img {
-  
-  width: 30px;
-  height: 40px;
-  transition: box-shadow 0.3s ease;  
-  transition: all 0.3s ease;   
 
-}
-.social-footer img:hover{
-    transform: translateY(-3px);   
-}
 
 .footer-copyright{
     justify-content: center;
