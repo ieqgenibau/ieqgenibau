@@ -444,7 +444,7 @@ nav{
     margin-bottom: 1rem; 
     color: white;
     font-family: "Matangi", sans-serif;
-    font-size: 10px;    
+    font-size: 15px;    
 }
 .logo-footer{
     width:100%;
@@ -548,6 +548,7 @@ nav{
         justify-content:space-around;
         text-align: justify;  
         margin-left: 80px;
+        font-size: 15px;
     
 }
 
