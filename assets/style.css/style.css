@@ -438,7 +438,6 @@ nav{
     box-shadow: 0 8px 15px rgba(255, 255, 255, 0.575);
 }
 
-
 .footer-content h1{
     text-align: justify;    
     font-size: 1rem;
@@ -450,8 +449,14 @@ nav{
 }
 .logofooter{
     width:100%;
-    height: auto;    
+    height: auto;
+    
 }
+
+.footer-content a{
+    text-align: center;
+}
+
 
 .footer-copyright{
     justify-content: center;
@@ -551,13 +556,8 @@ nav{
     
 }
 
-    .social-footer {
-        justify-content: center;
-        margin-left: 40px;
-}
 
 }
-    
 
 @media screen and (min-width: 726px) {
 
@@ -570,9 +570,6 @@ nav{
     width: 140px;
 }
 
-.social-footer img{
-    width: 40px;
-}
 }
 
 @keyframes navLinkFade{
