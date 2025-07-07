@@ -341,9 +341,15 @@ nav{
     transition: all 0.3s ease;
      display: inline-block;       
 }
-   .nav-bar a{
-    color: #000;
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align:end;
 }  
+.nav-bar a:hover{
+    opacity: 0.7;
+} 
 
 .nav-list li a:hover{
     transform: translateY(-3px) scale(1.2) ;    
