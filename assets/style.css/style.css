@@ -43,13 +43,13 @@ body{
   width: 100%;
   z-index: 10
 }
+
 main{
     background: #F2F2F2 ;
     background-size: cover;    
     flex: 1;  
     z-index: 1;
     position: relative;
-    mar
     
 }
 
@@ -360,6 +360,17 @@ nav{
     color: #8adceb; /* Cor ao passar o mouse */
     font-weight:bolder;
 }
+.nav-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  white-space: nowrap;
+}
+.nav-container .nav-item {
+  flex: 0 0 auto; /* mantém cada item na largura natural */
+}
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -444,7 +455,7 @@ nav{
 
     .nav-list{
         
-        position:absolute;
+        position:fixed;
         left: 0;        
         top: 34vh;
         right: 0;
@@ -475,13 +486,13 @@ nav{
         transform: scale(1.2); 
         font-weight:bolder;
 }
-    .navbar .navbar-collapse {
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        background: #fff; /* ou a cor do seu navbar */
-        z-index: 999;
-}
+  .navbar .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    background: #fff; /* ou a cor do seu navbar */
+    z-index: 999;
+  }
     .nav-bar{
         transition: all 0.3s ease;  
         z-index: 10;
