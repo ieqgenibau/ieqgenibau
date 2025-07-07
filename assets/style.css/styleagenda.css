@@ -304,7 +304,8 @@ nav{
   font-weight:bolder;
 }
     .nav-bar{
-                transition: all 0.3s ease;  
+         transition: all 0.3s ease;  
+        position: fixed;
 }
 
    .nav-bar a{
