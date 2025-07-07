@@ -444,7 +444,7 @@ nav{
 
     .nav-list{
         
-        position:fixed;
+        position:absolute;
         left: 0;        
         top: 34vh;
         right: 0;
