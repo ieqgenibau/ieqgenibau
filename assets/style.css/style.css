@@ -408,7 +408,7 @@ nav{
   padding: 0.5rem 3.5rem;
   align-items: center;
   gap: 2rem;
- overflow-x: hidden;
+ 
   
 }
 .logo-container {
@@ -452,7 +452,8 @@ nav{
     margin-bottom: 1rem; 
     color: white;
     font-family: "Matangi", sans-serif;
-    font-size: 12px;    
+    font-size: 12px;
+    overflow-x: hidden;
 }
 #logo-footer{
     width:10vw;
