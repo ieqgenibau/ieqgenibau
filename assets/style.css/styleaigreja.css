@@ -1,6 +1,7 @@
 main {
   position: relative;
   z-index: 20;
+  background: white;
 }
 
 section {
