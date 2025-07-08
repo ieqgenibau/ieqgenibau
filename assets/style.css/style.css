@@ -395,7 +395,7 @@ nav{
     background-color:#23232e ;    
     width: 100vw;
     justify-content: space-around;
-    height: 20vw;  
+    height: auto;  
     margin-bottom: 0; 
     position: relative;
     z-index: 10;  
@@ -573,7 +573,7 @@ nav{
 }
 
 
-    
+}   
 
 @media screen and (min-width: 726px) {
 
