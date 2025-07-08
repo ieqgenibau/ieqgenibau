@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+main {
+  position: relative;
+  z-index: 20;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 3rem;
+  gap: 2rem;
+  
+}
+
+.aigreja {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.aigreja img {
+  height: 350px;
+  width: auto;
+  max-width: 900px;
+  flex-shrink: 0;
+  object-fit: contain;
+  
+}
+
+.aigreja p,
+.aigreja li {
+  font-size: 15px;
+  margin: 5px 20px;
+  text-indent: 20px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+.aigreja h1 {
+  font-size: 25px;
+  margin: 5px 23px; 
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.aigreja p {
+  overflow-wrap: break-word;
+}
+
+.aigreja ul {
+  list-style: disc outside;
+  padding-left: 1.5em;
+}
+
+.aigreja li::marker {
+  content: "• ";
+  color: #333;
+  font-size: 1.2em;
+}
