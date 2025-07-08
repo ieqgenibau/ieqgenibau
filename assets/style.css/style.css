@@ -326,6 +326,7 @@ p{
 .social-icones .social-link:hover{
     opacity: 0.8;
     transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
     
 }
 #instagram{
