@@ -114,11 +114,19 @@ a:hover{
     justify-content: space-around;
 }
 
-img.logo {
+.nav-simbolos img{
     
   max-width: 100%;
   height: auto;
-  /* elimina espaços em linha nos navegadores */
+  height: 60px;
+  justify-content:space-around;
+  margin-bottom: 8px;
+  margin-left: 2px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.nav-simbolos img:hover{
+    opacity: 0.5;
 }
 
 .social-bar{
@@ -359,14 +367,7 @@ nav{
 .nav-list.ativo{
     transform: translateX(0);
 }
-.footer-content img{
-    width: 140px;
-}
-.social-footer img{
-    width: 40px;
-    text-align: center;
-    display:flex;
-}
+
   .footer-content {
     grid-template-columns: 1fr;  
     display: flex;
@@ -401,13 +402,7 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     gap:1rem;
 }
-.footer-content img{
-    width: 140px;
-}
 
-.social-footer img{
-    width: 40px;
-}
 }
 
 @keyframes navLinkFade{
