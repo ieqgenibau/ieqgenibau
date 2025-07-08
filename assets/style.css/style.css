@@ -458,9 +458,10 @@ nav{
     font-size: 12px;    
 }
 #logo-footer{
+    display: inline-block;
     width:100px;
     
-    height: 80vh;
+    height: 80px;
     z-index: 10;
     
     
@@ -553,12 +554,11 @@ nav{
         display: flex;
 }
 
-    .logo-container{
-        align-items: center;
-}
+
     #logo-footer {
+        display: inline-block;
         width:auto;    
-        height: 30px;
+        height: 10px;
         
         z-index: 10;
         
@@ -570,12 +570,6 @@ nav{
         font-size: 8px;
     
 }
-
-    .social-footer {
-        justify-content: center;
-        margin-left: 40px;
-}
-
 
 }   
 
@@ -595,8 +589,7 @@ nav{
 }
     #logo-footer {
         width:auto;    
-        height: 30px;
-        
+        height: 10px;        
         z-index: 10;
         
 }
