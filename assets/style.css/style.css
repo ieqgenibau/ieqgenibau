@@ -391,10 +391,16 @@ nav{
 }
 
 .footer-cont {
+    display: flex;
     background-color:#23232e ;    
     width: 100vw;
     justify-content: space-around;
-    height: auto;        
+    height: 20vw;  
+    margin-bottom: 0; 
+    position: relative;
+    z-index: 10;  
+    align-items: center; 
+    
 }
 .footer-content {
   display: grid;
@@ -402,6 +408,7 @@ nav{
   padding: 0.5rem 3.5rem;
   align-items: center;
   gap: 2rem;
+  
 }
 .logo-container {
     display: flex;
@@ -444,11 +451,15 @@ nav{
     margin-bottom: 1rem; 
     color: white;
     font-family: "Matangi", sans-serif;
-    font-size: 15px;    
+    font-size: 12px;    
 }
-.logo-footer{
-    width:100%;
-    height: auto;
+#logo-footer{
+    width:10vw;
+    
+    height: 70px;
+    z-index: 10;
+    border-top-left-radius: 10px;
+    
     
 }
 
@@ -458,15 +469,18 @@ nav{
 
 
 .footer-copyright{
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     background-color: #000;
     color: white;
-    padding: 1rem;
-    font-weight: 100;
+    bottom: 0;
+    width: 100%;
     font-size: 12px;
     align-items: center;
-    height: 1px;
+    height: 15px;
+    position:absolute;
+    z-index: 10;
+    opacity: 0.6;
     
 }
 @media screen and (max-width:999px){
@@ -538,10 +552,11 @@ nav{
     .logo-container{
         align-items: center;
 }
-    .logo-footer img{
-        align-items: right;
-        margin-left: -30px;
-        font-size: 40px;
+    #logo-footer {
+        width:auto;    
+        height: 70px;
+        z-index: 10;
+        
 }
 
     .dados-footer .h1{
@@ -557,7 +572,7 @@ nav{
         margin-left: 40px;
 }
 
-}
+
     
 
 @media screen and (min-width: 726px) {
