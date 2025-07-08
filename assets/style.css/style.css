@@ -590,6 +590,21 @@ nav{
 .social-footer img{
     width: 40px;
 }
+        #logo-footer {
+        width:auto;    
+        height: 30px;
+        
+        z-index: 10;
+        
+}
+
+    .dados-footer h1{
+        justify-content:space-around;
+        text-align: justify;  
+        margin-left: 80px;
+        font-size: 8px;
+    
+}
 }
 
 @keyframes navLinkFade{
