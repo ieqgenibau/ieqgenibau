@@ -17,6 +17,7 @@ section {
 .aigreja {
   display: flex;
   align-items: center;
+  flex-direction: column;/* padrão para mobile: imagem abaixo do texto */
   gap: 2rem;
   max-width: 100%;
   overflow: hidden;
@@ -63,4 +64,17 @@ section {
   content: "• ";
   color: #333;
   font-size: 1.2em;
+}
+
+
+@media (min-width: 800px) {
+  .aigreja {
+    flex-direction: row;     /* imagem ao lado do texto */
+    align-items: center;
+  }
+  .aigreja img {
+    width: auto;
+    height: 350px;
+    max-width: 300px;
+  }
 }
