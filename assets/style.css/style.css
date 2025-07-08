@@ -457,7 +457,7 @@ nav{
     font-family: "Matangi", sans-serif;
     font-size: 12px;    
 }
-#logo-footer{
+#logo-footer img{
     display: inline-block;
     width:100px;
     
@@ -555,7 +555,7 @@ nav{
 }
 
 
-    #logo-footer {
+    #logo-footer img{
         display: inline-block;
         width:auto;    
         height: 10px;
@@ -587,7 +587,8 @@ nav{
 .social-footer img{
     width: 40px;
 }
-    #logo-footer {
+    #logo-footer img{
+        display: inline-block;
         width:auto;    
         height: 10px;        
         z-index: 10;
