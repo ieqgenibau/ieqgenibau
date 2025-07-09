@@ -552,7 +552,7 @@ nav{
 .card-wrapper{
     max-width: 1200px;
     margin: 0 19px 35px;
-
+}
     .nav-list.ativo{
         transform: translateX(0);
 }
