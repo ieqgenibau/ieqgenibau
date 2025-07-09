@@ -48,7 +48,7 @@ main{
     background: #F2F2F2 ;
     background-size: cover;    
     flex: 1;  
-    z-index: 1;
+    z-index: 100;
     position: relative;
     
 }
@@ -147,12 +147,15 @@ p{
 .nav-simbolos img:hover{
     opacity: 0.5;
 }
-
+.card-list {
+  display: flex;           /* ativa o flexbox */
+  margin-left: 9px;       /* empurra o container para a direita */
+}
 .card-list .card-item .card-link{
     user-select:none;
     display:block;
     background-color: #fff;
-    padding: 18px;
+    padding: 20px;
     border-radius: 12px;
     text-decoration: none;
     border: 2px, solid, transparent;
@@ -238,7 +241,7 @@ p{
 }
 .card-wrapper{
     max-width: 1200px;
-    margin: 0 60px 35px;
+    margin: 0 65.1px 35px;
     padding: 20px 10px;
     overflow: hidden;
 }
