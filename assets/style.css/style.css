@@ -149,7 +149,7 @@ p{
 }
 .card-list {
   display: flex;           /* ativa o flexbox */
-  margin-left: 9px;       /* empurra o container para a direita */
+  margin-right: 15px;       /* empurra o container para a direita */
 }
 .card-list .card-item .card-link{
     user-select:none;
@@ -158,9 +158,10 @@ p{
     padding: 20px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px, solid, transparent;
+    border: 2px solid transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.575); /* Sombra externa */
     transition: all 0.3s ease;   
+    
 
 }
 .card-list .card-item .card-link:hover{
@@ -241,7 +242,7 @@ p{
 }
 .card-wrapper{
     max-width: 1200px;
-    margin: 0 65.1px 35px;
+    margin: 0 80px 35px;
     padding: 20px 10px;
     overflow: hidden;
 }
@@ -466,8 +467,7 @@ nav{
     display: inline-block;
     width:100px;    
     height: 80px;
-    z-index: 10;    
-    
+    z-index: 10;        
     
 }
 
@@ -517,6 +517,7 @@ nav{
 
 }
 
+
     .nav-list a{
         display: inline-block;
         transition: transform 0.3s ease, color 0.3s ease;
@@ -537,10 +538,6 @@ nav{
 }  
     .mobile-menu{
         display: block;
-}
-
-    .card-wrapper{
-        margin: 0 10px 25px;
 }
 
     .card-wrapper .swiper-slide-button{
@@ -578,15 +575,15 @@ nav{
 @media screen and (min-width: 726px) {
 
 
-.footer-content{
+    .footer-content{
     grid-template-columns: repeat(2, 1fr);
     gap:1rem;
 }
-.footer-content img{
+    .footer-content img{
     width: 140px;
 }
 
-.social-footer img{
+    .social-footer img{
     width: 40px;
 
 }
@@ -597,6 +594,7 @@ nav{
         font-size: 8px;
     
 }
+
 }
 
 @keyframes navLinkFade{
