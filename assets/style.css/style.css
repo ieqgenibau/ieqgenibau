@@ -552,6 +552,7 @@ nav{
     .card-wrapper{
         max-width: 1200px;
         margin: 0 23px 35px;/*19px altera o tamanho do card*/
+}   
     .nav-list.ativo{
         transform: translateX(0);
 }
@@ -631,3 +632,4 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
