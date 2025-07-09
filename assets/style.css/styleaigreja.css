@@ -2,82 +2,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
 main {
-  position: relative;
-  z-index: 20;
+  position: relative; /* Define que o elemento está posicionado (não estático); necessário para z-index funcionar) */  
+  z-index: 20;        /* Define prioridade de sobreposição, elementos com z-index maior aparecem acima ​:contentReference[oaicite:1]{index=1} */
   background: white;
 }
 
 section {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 2rem 3rem;
-  gap: 2rem;
-  
+  display: grid;                  /* Utiliza Grid layout para organizar o conteúdo em linhas/colunas */
+  grid-template-columns: 1fr;    /* Define uma única coluna flexível (1 fração) */
+  padding: 2rem 3rem;            /* Espaçamento interno geral: 2rem topo/baixo, 3rem esquerda/direita */
+  gap: 2rem;                     /* Espaçamento entre itens do grid (linhas únicas aqui) */
 }
 
 .aigreja {
-  display: flex;
-  align-items: center;
-  flex-direction: column;/* padrão para mobile: imagem abaixo do texto */
-  gap: 2rem;
-  max-width: 100%;
-  overflow: hidden;
-  min-width: 0;
+  display: flex;                 /* Utiliza Flexbox para layout flexível horizontal/vertical */
+  align-items: center;          /* Alinha itens verticalmente ao centro do container flex */
+  flex-direction: column;       /* Padrão: empilha verticalmente (útil para mobile) */
+  gap: 2rem;                    /* Espaçamento entre imagem e texto */
+  max-width: 100%;              /* Garante que o container não ultrapasse a largura da tela */
+  overflow: hidden;             /* Esconde qualquer conteúdo que extrapole os limites visíveis */
+  min-width: 0;                 /* Permite que o flex-item encolha adequadamente e evite overflow​:contentReference[oaicite:2]{index=2} */
 }
 
 .aigreja img {
-  width: auto;
-  flex-shrink: 0;
-  object-fit: contain;
-  display: block;   
+  width: auto;                  /* Mantém proporção natural da imagem */
+  flex-shrink: 0;               /* Evita que a imagem seja encolhida dentro do Flexbox */
+  object-fit: contain;          /* Garante que a imagem seja totalmente visível, sem cortes */
+  display: block;               /* Remove espaçamentos externos típicos de <img> inline */
 }
 
 .aigreja p,
 .aigreja li {
-  font-size: 15px;
-  margin: 5px 20px;
-  text-indent: 20px;
-  color: black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: normal;
+  font-size: 15px;              /* Define tamanho da fonte para parágrafos e itens de lista */
+  margin: 5px 20px;             /* Espaçamento externo: 5px vertical, 20px horizontal */
+  text-indent: 20px;            /* Indenta a primeira linha em 20px */
+  color: black;                 /* Define cor do texto como preto */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  /* Fonte 'Rubik' e fallback para fontes do sistema */
+  font-weight: normal;          /* Assegura que o texto não fique em negrito */
 }
+
 .aigreja h1 {
-  font-size: 25px;
-  margin: 5px 23px; 
-  color: black;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 25px;              /* Define o tamanho da fonte para o título */
+  margin: 5px 23px;             /* Espaçamento externo do título (geral) */
+  color: black;                 /* Cor do texto do título */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  /* Mesma família de fontes para consistência */
+  font-weight: bold;            /* Define o título em negrito */
+  margin-bottom: 15px;         /* Espaço extra abaixo do título */
 }
 
 .aigreja p {
-  overflow-wrap: break-word;
+  overflow-wrap: break-word;    /* Permite quebra de linha automática em palavras longas​:contentReference[oaicite:3]{index=3} */
 }
 
 .aigreja ul {
-  list-style: disc outside;
-  padding-left: 1.5em;
+  list-style: disc outside;     /* Usa marcadores tradicionais (bolinhas) fora do texto */
+  padding-left: 1.5em;          /* Espaço à esquerda para alinhar os marcadores */
 }
 
 .aigreja li::marker {
-  content: "• ";
-  color: #333;
-  font-size: 1.2em;
+  content: "• ";                /* Define marcador personalizado com Unicode */
+  color: #333;                  /* Cor cinza escura para o marcador */
+  font-size: 1.2em;             /* Tamanho do marcador levemente aumentado */
 }
+
+/* ===== Media Query para telas menores que 1000px (responsividade) ===== */
 @media (max-width: 999px) {
   .aigreja img {
-    max-width: 100%;  /* pode crescer até o limite do container */
+    max-width: 100%;            /* Permite que a imagem ocupe todo o espaço do container */
   }
 }
 
+/* ===== Media Query para telas maiores que 726px (desktop/tablet) ===== */
 @media (min-width: 726px) {
   .aigreja {
-    flex-direction: row;     /* imagem ao lado do texto */
-    align-items: center;
+    flex-direction: row;        /* Em telas maiores, imagem e texto ficam lado a lado */
+    align-items: center;        /* Centraliza verticalmente os itens nesse layout */
   }
   .aigreja img {
-    width: auto;
-    height: 700px;
-    max-width: 500px;
+    width: auto;                /* Mantém proporção da imagem */
+    height: 700px;              /* Define altura fixa maior para desktop */
+    max-width: 500px;           /* Limita largura da imagem */
   }
 }
+
