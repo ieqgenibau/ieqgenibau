@@ -544,14 +544,14 @@ nav{
         display: none;
 }
     .card-list {
-        left: 2.5px;/*movimenta o card para os lados*/
+        left: 1.5px;/*movimenta o card para os lados*/
         justify-content:space-between;
         display: flex;
 }
 
     .card-wrapper{
         max-width: 1200px;
-        margin: 0 23px 35px;/*19px altera o tamanho do card*/
+        margin: 0 30px 35px;/*19px altera o tamanho do card*/
 }   
     .nav-list.ativo{
         transform: translateX(0);
