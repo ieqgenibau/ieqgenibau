@@ -543,7 +543,15 @@ nav{
     .card-wrapper .swiper-slide-button{
         display: none;
 }
+  .card-list {
+    left: 3.5px;
+    justify-content:space-between;
+    display: flex;
+  }
 
+.card-wrapper{
+    max-width: 1200px;
+    margin: 0 19px 35px;
 
     .nav-list.ativo{
         transform: translateX(0);
