@@ -582,7 +582,10 @@ nav{
 
 @media screen and (min-width: 726px) {
 
-
+     .nav-list{
+      height:66%;
+      }
+    
     .footer-content{
     grid-template-columns: repeat(2, 1fr);
     gap:1rem;
