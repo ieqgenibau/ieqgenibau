@@ -725,12 +725,37 @@ nav{
 }   
 @media (min-width:768px) and (max-width:1023px){
       nav{
-      height: 30%;
+      height: 50%;
       }
      .nav-list{
       height:66vh;
       }
-    
+    .social-bar{
+        height: 15vh;
+    }
+        .logo{
+        height: 100%;
+        width: auto;
+        transform: scale(0.7);
+        margin: -1rem;
+        
+    }
+    .nav-simbolos{
+        margin-left: -2.0rem;
+    }
+    .for{
+        letter-spacing: 3.5px;
+        font-size: 0.8rem;
+        margin-left: -1rem;
+ 
+}
+    .gen{
+        letter-spacing: 0.3rem;
+        margin: -10px 0px 10px 0px;
+        font-size: 1.1rem;
+         margin-left: -1.0rem;
+
+}
     .footer-content{
     grid-template-columns: repeat(2, 1fr);
     gap:1rem;
