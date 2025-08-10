@@ -38,11 +38,6 @@ body{
      
 }
       
-.nav-bar {
-  position: relative;  
-  width: 100%;
-  z-index: 10
-}
 
 main{
     background: #F2F2F2 ;
@@ -94,15 +89,13 @@ main{
       /*background-color: rgba(0, 0, 0, 0.0); /* fundo escuro transparente */
       /*.container: 20px;*/
      /*border-radius: 10px;*/
-
-.nav-bar a{
+nav a{
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
     text-align:end;
 }                                                                                                                                                                                                                                   
-
-.nav-bar a:hover{
+nav a:hover{
     opacity: 0.7;
 }
 p{
@@ -357,9 +350,10 @@ nav{
     height: 25vh;    
     /*fiz uma alteração aqui para colocar sombra na Nav*/
     position: relative;
-    box-shadow: 0 3px 10px #C4D2D2;
+    box-shadow: 0 3px 10px #d2c4c4;
     transition: box-shadow 0.3s ease;  
-    white-space: nowrap;       
+    white-space: nowrap;  
+    width: 100%;     
 }
     nav:hover {
     box-shadow: 0px 5px 10px #C4D2D2;
@@ -492,9 +486,9 @@ nav{
     
 }
 @media (max-width:480px){
-    .nav-bar{
-      height: 100%;
-      }
+    nav{
+       height: 50%;
+    }
 
     .nav-list{
         
@@ -583,9 +577,14 @@ nav{
 
 }   
 @media (max-width:768px){
-    .nav-bar{
-      height: 100%;
-      }
+        nav{
+       height: 60%;
+       padding-top:3.5rem;
+       padding-bottom: 3rem;
+       margin: 0;
+      
+       
+    }
 
     .nav-list{
         
@@ -604,6 +603,29 @@ nav{
         z-index: 10;   
         overflow-y: auto;   
         
+}
+    .logo{
+        height: 100%;
+        width: auto;
+        transform: scale(0.7);
+        margin: -1rem;
+        
+    }
+    .nav-simbolos{
+        margin-left: -5rem;
+    }
+    .for{
+        letter-spacing: 3.5px;
+        font-size: 0.8rem;
+        margin-left: -1rem;
+ 
+}
+    .gen{
+        letter-spacing: 0.3rem;
+        margin: -10px 0px 10px 0px;
+        font-size: 1.1rem;
+         margin-left: -4rem;
+
 }
     .nav-list li{
         margin-left: 0;
@@ -674,8 +696,37 @@ nav{
 
 }   
 @media (min-width:768px) and (max-width:1023px){
+      nav{
+      height: 30%;
+      }
+     .nav-list{
+      height:66vh;
+      }
+    
+    .footer-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+}
+    .footer-content img{
+    width: 140px;
+}
+
+    .social-footer img{
+    width: 40px;
+
+}
+    .dados-footer h1{
+        justify-content:space-around;
+        text-align: justify;  
+        margin-left: 80px;
+        font-size: 8px;
+    
+}
+
+}
+@media (min-width:1224px) and (max-width:1439px){
       .nav-bar{
-      height: 90%;
+      height: 40%;
       }
      .nav-list{
       height:66vh;
@@ -730,5 +781,4 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
-
 
