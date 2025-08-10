@@ -486,8 +486,13 @@ nav{
     
 }
 @media (max-width:480px){
-    nav{
-       height: 50%;
+        nav{
+       height: 60%;
+       padding-top:3.5rem;
+       padding-bottom: 3rem;
+       margin: 0;
+      
+       
     }
 
     .nav-list{
@@ -507,6 +512,29 @@ nav{
         z-index: 10;   
         overflow-y: auto;   
         
+}
+    .logo{
+        height: 100%;
+        width: auto;
+        transform: scale(0.4);
+        margin: -1rem;
+        
+    }
+    .nav-simbolos{
+        margin-left: -2rem;
+    }
+    .for{
+        letter-spacing: 3.5px;
+        font-size: 0.8rem;
+        margin-left: -1rem;
+ 
+}
+    .gen{
+        letter-spacing: 0.3rem;
+        margin: -10px 0px 10px 0px;
+        font-size: 1.1rem;
+         margin-left: -4rem;
+
 }
     .nav-list li{
         margin-left: 0;
@@ -575,7 +603,7 @@ nav{
     
 }
 
-}   
+}  
 @media (max-width:768px){
         nav{
        height: 60%;
@@ -612,7 +640,7 @@ nav{
         
     }
     .nav-simbolos{
-        margin-left: -5rem;
+        margin-left: -2.5rem;
     }
     .for{
         letter-spacing: 3.5px;
@@ -624,7 +652,7 @@ nav{
         letter-spacing: 0.3rem;
         margin: -10px 0px 10px 0px;
         font-size: 1.1rem;
-         margin-left: -4rem;
+         margin-left: -1.5rem;
 
 }
     .nav-list li{
