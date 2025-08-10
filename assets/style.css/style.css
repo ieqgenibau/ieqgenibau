@@ -493,7 +493,7 @@ nav{
 }
 @media screen and (max-width:999px){
     .nav-bar{
-      height: 80%;
+      height: 100%;
       }
 
     .nav-list{
@@ -585,7 +585,7 @@ nav{
 
 @media screen and (min-width: 726px) {
       .nav-bar{
-      height: 80%;
+      height: 90%;
       }
      .nav-list{
       height:66%;
