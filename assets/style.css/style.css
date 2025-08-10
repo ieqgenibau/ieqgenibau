@@ -724,12 +724,11 @@ nav{
 
 }   
 @media (min-width:768px) and (max-width:1023px){
-      nav{
-      height: 50%;
-      }
-     .nav-list{
-      height:66vh;
-      }
+
+nav{
+    height: 40vh;    
+    width: 100%;     
+}
     .social-bar{
         height: 15vh;
     }
@@ -742,6 +741,7 @@ nav{
     }
     .nav-simbolos{
         margin-left: -2.0rem;
+        margin-top: 0.8rem;
     }
     .for{
         letter-spacing: 3.5px;
@@ -778,13 +778,41 @@ nav{
 
 }
 @media (min-width:1224px) and (max-width:1439px){
-      .nav-bar{
-      height: 40%;
-      }
-     .nav-list{
-      height:66vh;
-      }
-    
+
+nav{
+    height: 40vh;    
+    width: 100%;     
+}
+    .social-bar{
+        height: 15vh;        
+    }
+    .social-bar a{
+        margin-left: 2rem;
+    }
+        .logo{
+        height: 100%;
+        width: auto;
+        transform: scale(0.7);
+        margin: -1rem;
+        
+    }
+    .nav-simbolos{
+        margin-left: -2.0rem;
+        margin-top: 0.8rem;
+    }
+    .for{
+        letter-spacing: 3.5px;
+        font-size: 0.8rem;
+        margin-left: -1rem;
+ 
+}
+    .gen{
+        letter-spacing: 0.3rem;
+        margin: -10px 0px 10px 0px;
+        font-size: 1.1rem;
+         margin-left: -1.0rem;
+
+}
     .footer-content{
     grid-template-columns: repeat(2, 1fr);
     gap:1rem;
@@ -806,7 +834,6 @@ nav{
 }
 
 }
-
 @keyframes navLinkFade{
     from{
         opacity: 0;
