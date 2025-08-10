@@ -780,30 +780,41 @@ nav{
 @media (min-width:1224px) and (max-width:1439px){
 
 nav{
-    height: 40vh;    
-    width: 100%;     
+    height: 55%;    
+    width: 100%;  
+    gap: 2rem;
+    padding: 2rem 2rem;   
+}
+.nav-list{
+    gap: 5rem;  
 }
     .social-bar{
-        height: 15vh;        
+        height: 15vh;  
+              
     }
-    .social-bar a{
-        margin-left: 2rem;
+    .social-icones{
+        margin-left: -0.5rem;
+        padding-left: 2.5rem;
+       
     }
         .logo{
         height: 100%;
         width: auto;
         transform: scale(0.7);
         margin: -1rem;
+       
         
     }
     .nav-simbolos{
-        margin-left: -2.0rem;
-        margin-top: 0.8rem;
+        margin-left: -2.3rem;
+        margin-top: 1rem;
+        
     }
     .for{
         letter-spacing: 3.5px;
         font-size: 0.8rem;
         margin-left: -1rem;
+         margin-bottom: 1rem;
  
 }
     .gen{
