@@ -781,7 +781,7 @@ nav{
 }
 
 }
-@media (min-width:1224px) and (max-width:1439px){
+@media (min-width:1024px) and (max-width:1439px){
 
 nav{
     height: 55%;    
@@ -794,15 +794,15 @@ nav{
     z-index: 10;
 }
 .nav-list{
-    gap: 5rem;  
+    gap: 1rem;  
 }
     .social-bar{
         height: 15vh;  
               
     }
     .social-icones{
-        margin-left: 2.5rem;
-        padding-left: 2.5rem;
+        margin-left: 1.5rem;
+        
        
     }
         .logo{
