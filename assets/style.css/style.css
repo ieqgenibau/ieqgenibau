@@ -503,7 +503,7 @@ nav{
         top: 25vh;
         right: 0;
         width: 100%;
-        height:66%;
+        height:66vh;
         background: #CED6FB;
         flex-direction: column;
         align-items: center;
@@ -588,7 +588,7 @@ nav{
       height: 90%;
       }
      .nav-list{
-      height:66%;
+      height:66vh;
       }
     
     .footer-content{
