@@ -814,13 +814,11 @@ nav{
         
     }
     .nav-simbolos{
-        margin-left: -2.3rem;
+        margin-left:-6.3rem;
         margin-top: 1rem;        
     }
 
-    .nav-logo{
-        margin-left: -4rem;
-    }
+
     .for{
         letter-spacing: 3.5px;
         font-size: 0.8rem;
@@ -832,7 +830,7 @@ nav{
         letter-spacing: 0.3rem;
         margin: -10px 0px 10px 0px;
         font-size: 1.1rem;
-         margin-left: -1.0rem;
+         margin-left:  -8rem;
 
 }
     .footer-content{
