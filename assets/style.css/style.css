@@ -598,14 +598,11 @@ nav{
 }  
 @media (max-width:768px){
         nav{
-       height: 60%;
+       height:20vh;
        padding-top:3.5rem;
        padding-bottom: 3rem;
        margin:0; 
-       padding: 0;
-
-      
-       
+       padding: 0; 
     }
 
     .nav-list{
@@ -625,20 +622,16 @@ nav{
         z-index: 10;   
         overflow-y: auto;          
 }
-    .logo{
-        height: 100%;
-        width: auto;
-        transform: scale(0.7);
-        margin: -1rem;
-        
-    }
+
     .social-icones {
 
         margin-left: 0rem;
     }
     .nav-simbolos{
-        margin-left: -4.3rem;
-        transform: scale(0.9);
+        margin-left: -9rem;
+        transform: scale(0.4);
+        margin-top: 1rem;
+        margin-bottom: -2rem;
     }
 
 .nav-simbolos img{
@@ -646,7 +639,6 @@ nav{
   max-width: 100%;
   height: auto;
   height: 9vh;
-  justify-content:space-around;
   margin-top: 1rem;
   margin-bottom: 0.2rem;
   margin-left: 0.2rem;
@@ -658,41 +650,27 @@ nav{
 }
     .for{
         letter-spacing: 3.5px;
-        font-size: 0.7rem;
+        font-size: 0.4rem;
         margin-left: -3.8rem !important;
+        transform: translateX(-5rem);
+        margin-top: -0.6rem;
+        margin-bottom: 3rem;
  
 }
     .gen{
-        letter-spacing: 0.3rem;
-        font-size: 1rem;
-         margin-left: -6.5rem;
+        letter-spacing: 0.2rem;
+        font-size: 0.7rem;
+         margin-left: -6.5rem;        
+         transform: translateX(-4.8rem);
 
 }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-
+.social-icones .social-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 25px;    
+    transform: translateX(6.8rem);
 }
-
-
-    .nav-list a{
-        display: inline-block;
-        transition: transform 0.3s ease, color 0.3s ease;
-}
-    .nav-list li a:hover{
-        color: #5107fd; /* Cor ao passar o mouse */
-        transform: scale(1.2); 
-        font-weight:bolder;
-}
-
-    .nav-bar{
-        transition: all 0.3s ease;  
-        z-index: 10;
-}
-
-   .nav-bar a{
-        color: #000;
-}  
+  
     .mobile-menu{
         display: block;
 }
