@@ -779,7 +779,9 @@ nav{
     font-size: 25px;   
 }
 
-
+.social-bar{
+    height: 11vh;
+}
 .social-bar a{
     margin-left: -0.7rem;
 }
@@ -911,4 +913,5 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
