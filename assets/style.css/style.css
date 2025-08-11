@@ -297,7 +297,7 @@ p{
   display: flex; 
   align-items: center;  
   gap: 2rem;
-  transform: translateX(4.4rem);  
+  transform: translateX(5.2rem);  
   
 }
 .social-icones .social-link{
@@ -907,5 +907,4 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
-
 
