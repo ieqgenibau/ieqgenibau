@@ -287,7 +287,7 @@ p{
  
 }
 .social-bar a{
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
 }
 .social-link{
     text-decoration: none;
@@ -309,6 +309,7 @@ p{
     color: white;
     border-radius: 50%;
     transition: all 0.3s ease; 
+    transform: translateX(4.5rem);
 }
 
 .social-icones .social-link:hover{
