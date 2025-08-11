@@ -644,6 +644,7 @@ nav{
   margin-left: 0.2rem;
   align-items: center;
   transition: all 0.3s ease;
+ 
 }
 .nav-simbolos img:hover{
     opacity: 0.5;
@@ -744,6 +745,7 @@ nav{
   margin-left: 0.2rem;
   align-items: center;
   transition: all 0.3s ease;
+   transform: translateX(10rem);
 }
 .nav-simbolos img:hover{
     opacity: 0.5;
@@ -751,8 +753,7 @@ nav{
 .nav-list a{
     padding-left:1rem;
 }
-    .nav-simbolos{
-        margin-left: -2.7rem;
+    .nav-simbolos{       
         margin-top: 0.0rem;
         transform:scale(0.5);
     }
@@ -760,22 +761,25 @@ nav{
         letter-spacing: 0.1rem;
         font-size: 0.3rem;
         margin-left: -2rem;
-        transform: translateX(-3rem);
+        transform: translateX(1.5rem);
  
 }
     .gen{
         letter-spacing: 0.2rem;       
-        font-size: 0.8rem;
-         transform: translateX(-2.9rem);
+        font-size: 0.6rem;
+         transform: translateX(1.5rem);
          margin-top: -1rem;
-
+}
+.social-icones{
+    transform: translateX(0.5rem);
 }
 .social-icones .social-link{
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 25px;    
-    transform: translateX(-0.1rem);
+    font-size: 25px;   
 }
+
+
 .social-bar a{
     margin-left: -0.7rem;
 }
@@ -907,5 +911,4 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
-
 
