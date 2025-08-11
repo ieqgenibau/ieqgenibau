@@ -108,7 +108,25 @@ p{
     justify-content: space-around;
 }
 
-
+        .nav-simbolos{
+        margin-left: -6.8rem;
+        margin-top: 1.5rem;
+        transform: scale(0.5);
+    }
+.nav-simbolos img{
+    
+  max-width: 100%;
+  height: auto;
+  height: 15vh;
+  justify-content:space-around;
+  margin-bottom: 8px;
+  margin-left: 0.2rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.nav-simbolos img:hover{
+    opacity: 0.5;
+}
 
 .card-list {
   display: flex;           /* ativa o flexbox */
@@ -798,15 +816,19 @@ nav{
     box-shadow: 0px 5px 10px #ffffff;
     z-index: 10;
 }
+.nav-list a{
+    padding:2rem;
+    margin-top: -2rem;
+}
     .social-bar{
         height: 15vh;
     }
  
-        .nav-simbolos{
-        margin-left: -6.8rem;
-        margin-top: 1.5rem;
-        transform: scale(0.5);
-    }
+.nav-simbolos{
+    margin-left: -2.8rem;
+    margin-top: 1.5rem;
+    transform: scale(0.5);
+}
 .nav-simbolos img{
     
   max-width: 100%;
@@ -817,26 +839,28 @@ nav{
   margin-left: 0.2rem;
   align-items: center;
   transition: all 0.3s ease;
+  transform: translateX(3.7rem);
 }
 .nav-simbolos img:hover{
     opacity: 0.5;
 }
     .nav-simbolos{
-        margin-left: -3.8rem;
-        margin-top: 0.0rem;
+        margin-left: -8.8rem;
+        margin-top: -1.0rem;
         transform:scale(0.5);
     }
     .for{
         letter-spacing: 0.1rem;
-        font-size: 1rem;
-        margin-left: -2rem;
-        transform: translateX(-2.6rem);
+        font-size: 0.7rem;        
+        transform: translateX(-4.7rem);
+        
  
 }
     .gen{
         letter-spacing: 0.4rem;        
-        font-size: 1.3rem;
-        transform: translateX(-2.1rem) 
+        font-size: 1rem;
+        transform: translateX(-4.4rem) ;
+        margin-top: -2rem;
 
 }
     .footer-content{
