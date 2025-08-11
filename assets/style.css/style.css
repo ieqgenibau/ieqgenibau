@@ -615,7 +615,8 @@ nav{
         margin-left: 0.3rem;
     }
     .nav-simbolos{
-        margin-left: -7.3rem;
+        margin-left: -4.3rem;
+        transform: scale(0.9);
     }
 
 .nav-simbolos img{
