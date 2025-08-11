@@ -775,15 +775,15 @@ nav{
         transform:scale(0.5);
     }
     .for{
-        letter-spacing: 0.1rem;
+        letter-spacing: 2.1rem;
         font-size: 0.6rem;
         margin-left: -2rem;
-        transform: translateX(-4.5rem);
+        transform: translateX(-6.5rem);
  
 }
     .gen{
         letter-spacing: 0.2rem;       
-        font-size: 1.0rem;
+        font-size: 0.6rem;
          transform: translateX(-4.2rem);
          margin-top: -1rem;
 
@@ -838,11 +838,12 @@ nav{
   height: auto;
   height: 15vh;
   justify-content:space-around;
-  margin-bottom: 8px;
-  margin-left: 0.2rem;
+  margin-bottom: 1.3rem ;
+  margin-left: 1.8rem;
   align-items: center;
   transition: all 0.3s ease;
   transform: translateX(3.7rem);
+ 
 }
 .nav-simbolos img:hover{
     opacity: 0.5;
