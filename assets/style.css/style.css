@@ -625,7 +625,7 @@ nav{
 
     .social-icones {
 
-        margin-left: -1rem;
+        margin-left: -4.1rem;
     }
     .nav-simbolos{
         margin-left: -7rem;
@@ -907,4 +907,5 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
