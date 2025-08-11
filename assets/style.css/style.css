@@ -749,18 +749,19 @@ nav{
     opacity: 0.5;
 }
     .nav-simbolos{
-        margin-left: -2.0rem;
+        margin-left: -3.8rem;
         margin-top: 0.0rem;
+        transform:scale(0.7);
     }
     .for{
-        letter-spacing: 3.5px;
+        letter-spacing: 0.1rem;
         font-size: 0.9rem;
         margin-left: -2rem;
         transform: translateX(-2.6rem);
  
 }
     .gen{
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.2rem;
         margin: -10px 0px 10px 0px;
         font-size: 1.1rem;
          transform: translateX(-2.6rem);
