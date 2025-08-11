@@ -309,7 +309,7 @@ p{
     color: white;
     border-radius: 50%;
     transition: all 0.3s ease; 
-    transform: translateX(4.5rem);
+    transform: translateX(4.6rem);
 }
 
 .social-icones .social-link:hover{
@@ -919,4 +919,5 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
