@@ -286,6 +286,9 @@ p{
     z-index: 1000;
  
 }
+.social-bar a{
+    margin-left: 1.5rem;
+}
 .social-link{
     text-decoration: none;
 }
@@ -856,14 +859,14 @@ nav{
     .for{
         letter-spacing: 0.1rem;
         font-size: 0.7rem;        
-        transform: translateX(-4.7rem);
+        transform: translateX(-5.7rem);
         
  
 }
     .gen{
-        letter-spacing: 0.4rem;        
-        font-size: 1rem;
-        transform: translateX(-4.4rem) ;
+        letter-spacing: 0.45rem;        
+        font-size: 1.4rem;
+        transform: translateX(-5.4rem) ;
         margin-top: -2rem;
 
 }
