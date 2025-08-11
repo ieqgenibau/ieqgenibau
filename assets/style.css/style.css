@@ -715,7 +715,7 @@ nav{
 }
 
 }   
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1023px){
 
 nav{
     height: 15vh;    
@@ -807,7 +807,7 @@ nav{
 }
 
 }
-@media (min-width:1024px) and (max-width:1439px){
+@media (min-width:1025px) and (max-width:1439px){
 nav{
     height: 30vh;    
     width: 100%; 
@@ -913,4 +913,5 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
