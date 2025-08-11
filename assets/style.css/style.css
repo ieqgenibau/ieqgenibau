@@ -779,16 +779,16 @@ nav{
         transform:scale(0.5);
     }
     .for{
-        letter-spacing: 2.1rem;
-        font-size: 0.6rem;
+        letter-spacing: 0.1rem;
+        font-size: 0.3rem;
         margin-left: -2rem;
-        transform: translateX(-6.5rem);
+        transform: translateX(-4.5rem);
  
 }
     .gen{
         letter-spacing: 0.2rem;       
         font-size: 0.6rem;
-         transform: translateX(-4.2rem);
+         transform: translateX(-2.9rem);
          margin-top: -1rem;
 
 }
