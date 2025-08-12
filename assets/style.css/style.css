@@ -112,6 +112,7 @@ p{
 .nav-simbolos img{
   margin:0;  
   height: 13vh;  
+  transform: scale(0.8);
   justify-content:space-around;
   margin-bottom: 8px;
   margin-left: 0;
@@ -352,15 +353,19 @@ nav{
 /*até aqui*/
 
 .nav-list{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
     list-style:none;
-    display: flex; 
-    z-index: 10;    
+    gap: 3rem;
+    z-index: 10;
+    margin-right: 2rem;    
 }
 
 
 .nav-list li{
     letter-spacing: 3px;
-    margin-left: 4rem;
+    margin-left: 0rem;
     transition: all 0.3s ease;
     display: inline-block;  
 }
@@ -708,7 +713,7 @@ margin-left: 0;
 }
 
 }   
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1024px) and(orientation: landscape){
 
 nav{
     height: 19vh;    
