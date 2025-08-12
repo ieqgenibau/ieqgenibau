@@ -112,7 +112,7 @@ p{
 .nav-simbolos img{
   margin:0;  
   height: 13vh;  
-  transform: scale(0.5);
+  transform: scale(0.7);
   justify-content:space-around;
   margin-bottom: 8px;
   margin-left: 0;
@@ -809,6 +809,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
