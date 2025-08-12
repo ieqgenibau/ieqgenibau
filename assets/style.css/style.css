@@ -357,7 +357,7 @@ nav{
     position: relative;
     justify-content: space-between;
     list-style:none;
-    gap: 3rem;
+    gap: 1rem;
     z-index: 10;
     margin-right: 2rem;    
 }
@@ -781,14 +781,17 @@ nav{
 }
 
 }
-@media (min-width:1024px) and (max-width:1440px){
+@media (min-width:1025px) and (max-width:1440px){
     .nav-simbolos img{
   margin:0;  
   height: 15vh;  
   width: auto;
   margin-left: 1.5rem;
     }
-
+    .nav-list{
+    gap: 4rem;   
+    margin-right: 2rem;    
+}
 }
 @keyframes navLinkFade{
     from{
