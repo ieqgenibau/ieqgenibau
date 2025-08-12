@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+main {
+  position: relative; /* Define que o elemento está posicionado (não estático); necessário para z-index funcionar) */  
+  z-index: 20;        /* Define prioridade de sobreposição, elementos com z-index maior aparecem acima ​:contentReference[oaicite:1]{index=1} */
+  background: white;
+}
+
+section {
+  display: grid;                  /* Utiliza Grid layout para organizar o conteúdo em linhas/colunas */
+  grid-template-columns: 1fr;    /* Define uma única coluna flexível (1 fração) */
+  padding: 2rem 3rem;            /* Espaçamento interno geral: 2rem topo/baixo, 3rem esquerda/direita */
+  gap: 2rem;                     /* Espaçamento entre itens do grid (linhas únicas aqui) */
+}
+
+.aigreja {
+  max-width: 100%;              /* Garante que o container não ultrapasse a largura da tela */
+  min-width: 0;                 /* Permite que o flex-item encolha adequadamente e evite overflow​:contentReference[oaicite:2]{index=2} */
+}
+
+.aigreja .texto {
+    overflow: hidden; /* Isso fará com que o .texto contenha a imagem flutuante */
+    /* Removido padding aqui, pois a section já tem padding */
+}
+
+.imagem-circundada {
+    float: left; /* Faz a imagem flutuar para a esquerda */
+    width: 250px; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin-right: 25px; /* Espaço entre a imagem e o texto à direita */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+    border-radius: 8px; /* Opcional: para bordas arredondadas */
+    object-fit: cover; /* Para garantir que a imagem preencha a área definida, cortando se necessário */
+}
+.aigreja img {
+  width: auto;                  /* Mantém proporção natural da imagem */
+  flex-shrink: 0;               /* Evita que a imagem seja encolhida dentro do Flexbox */
+  object-fit: contain;          /* Garante que a imagem seja totalmente visível, sem cortes */
+  display: block;               /* Remove espaçamentos externos típicos de <img> inline */
+}
+
+.aigreja p,
+.aigreja li {
+  font-size: 15px;              /* Define tamanho da fonte para parágrafos e itens de lista */  
+  text-indent: 20px;            /* Indenta a primeira linha em 20px */
+  color: black;                 /* Define cor do texto como preto */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  /* Fonte 'Rubik' e fallback para fontes do sistema */
+  font-weight: normal;          /* Assegura que o texto não fique em negrito */
+  margin: 5px 0;
+}
+
+.aigreja h1 {
+  font-size: 25px;              /* Define o tamanho da fonte para o título */
+   margin: 5px 0 15px 0;             /* Espaçamento externo do título (geral) */
+  color: black;                 /* Cor do texto do título */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  /* Mesma família de fontes para consistência */
+  font-weight: bold;            /* Define o título em negrito */
+  margin-bottom: 15px;         /* Espaço extra abaixo do título */
+  
+}
+
+.aigreja p {
+  overflow-wrap: break-word;    /* Permite quebra de linha automática em palavras longas​:contentReference[oaicite:3]{index=3} */
+}
+
+.aigreja ul {
+  list-style: disc outside;     /* Usa marcadores tradicionais (bolinhas) fora do texto */
+  padding-left: 1.5em;          /* Espaço à esquerda para alinhar os marcadores */
+}
+
+.aigreja li::marker {
+  content: "• ";                /* Define marcador personalizado com Unicode */
+  color: #333;                  /* Cor cinza escura para o marcador */
+  font-size: 1.2em;             /* Tamanho do marcador levemente aumentado */
+}
+
+/* ===== Media Query para telas menores que 1000px (responsividade) ===== */
+@media (max-width: 999px) {
+    .imagem-circundada {
+        float: none; /* Remove a flutuação em telas menores */
+        display: block; /* Faz a imagem ocupar sua própria linha */
+        width: 80%; /* Ajusta a largura para telas menores */
+        max-width: 300px; /* Limita o tamanho máximo */
+        margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona margem inferior */
+    }
+        .aigreja p,
+    .aigreja li,
+    .aigreja h1 {
+        margin: 5px 0; /* Margens verticais */
+        text-indent: 0; /* Remove indentação se preferir em mobile */
+        text-align: left; /* Garante alinhamento à esquerda */
+    }
+    .aigreja h1 {
+        text-align: center; /* Centraliza o título em mobile */
+        margin-bottom: 15px;
+    }
+}
+  .aigreja img {
+    max-width: 100%;            /* Permite que a imagem ocupe todo o espaço do container */
+  }
+
+
+/* ===== Media Query para telas maiores que 726px (desktop/tablet) ===== */
+@media (min-width: 726px) {
+    .imagem-circundada {
+        float: left; /* Re-aplica a flutuação para telas maiores */
+        width: 300px; /* Ajusta a largura para desktop */
+        height: auto; /* Mantém a proporção */
+        margin-right: 30px; /* Mais espaço à direita */
+        margin-bottom: 15px;
+    }
+    .aigreja p,
+    .aigreja li {
+        margin: 5px 0; /* Mantém as margens ajustadas */
+        text-indent: 20px; /* Mantém a indentação */
+    }
+    .aigreja h1 {
+        margin: 5px 0 15px 0;
+        text-align: left; /* Alinha o título à esquerda em desktop */
+    }
+}
+
