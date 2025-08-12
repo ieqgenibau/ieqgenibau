@@ -124,6 +124,7 @@ p{
   align-items: center;
   transition: all 0.3s ease;
 }
+
 .nav-simbolos img:hover{
     opacity: 0.5;
 }
@@ -479,7 +480,7 @@ nav{
     
 }
 @media (max-width:480px){
-      nav{
+        nav{
        height:20vh;
        padding-top:3.5rem;
        padding-bottom: 3rem;
@@ -495,7 +496,7 @@ nav{
         right: 0;
         width: 100%;
         height:66vh;
-        background: #CED6FB;
+        background: #ff0000;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -507,12 +508,12 @@ nav{
 
     .social-icones {
 
-        margin-left: 0rem;
+        margin-left: -6.5rem;
     }
     .nav-simbolos{
-        margin-left: -9rem;
-        transform: scale(0.6);
-        margin-top: 1rem;
+        margin-left: -5rem;
+        transform: scale(0.4);
+        margin-top: -2.5rem;
         margin-bottom: -2rem;
     }
 
@@ -570,7 +571,7 @@ nav{
     
 }
 
-}    
+}   
 @media (max-width:768px){
         nav{
        height:20vh;
@@ -584,19 +585,28 @@ nav{
         
         position:absolute;
         left: 0;        
-        top: 25vh;
+        top: 20vh;
         right: 0;
         width: 100%;
-        height:66vh;
-        background: #CED6FB;
+        height:77vh;
+        background: #000000;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.2s ease-in;
         z-index: 10;   
-        overflow-y: auto;          
+        overflow-y: auto;   
+        gap:4rem;                     
 }
+
+ .nav-list li {
+    margin-left: 0;
+    opacity: 0; 
+    margin-top: 4rem; 
+
+ }
+
+
 
     .social-icones {
 
@@ -664,7 +674,7 @@ nav{
 }
 
 }   
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1024px){
 
 nav{
     height: 15vh;    
@@ -750,15 +760,13 @@ nav{
     .social-bar{
         height: 15vh;
     }
- 
+ .social-icones{
+    margin-left: -2.2rem;
+ }
 .nav-simbolos{
     margin-left: 4rem;
     margin-top: 1.5rem;
     transform: scale(0.9);
-}
-
-.nav-simbolos img:hover{
-    opacity: 0.5;
 }
 
 }
