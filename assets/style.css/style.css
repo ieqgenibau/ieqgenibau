@@ -730,9 +730,9 @@ nav{
     }
  
     .nav-simbolos{
-        margin-left: 0;
+        margin-left: 0.2rem;
         margin-top: 1.5rem;
-        transform: scale(1.2) !important;
+        transform: scale(1.4) !important;
     }
 
 .nav-simbolos img:hover{
@@ -809,6 +809,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
