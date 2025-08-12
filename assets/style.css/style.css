@@ -713,7 +713,7 @@ margin-left: 0;
 }
 
 }   
-@media (min-width:769px) and (max-width:1024px) and(orientation: landscape){
+@media (min-width:769px) and (max-width:1024px){
 
 nav{
     height: 19vh;    
@@ -809,6 +809,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
