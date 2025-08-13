@@ -756,7 +756,7 @@ body.overlay-ativo footer {
 }
 
 /* Para telas entre 769px e 1024px (Tablets maiores e Laptops menores) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) and (orientation:portrait) {
     nav {
         height: 25vh;
         width: 100%;
