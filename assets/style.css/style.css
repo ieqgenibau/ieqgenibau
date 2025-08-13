@@ -343,7 +343,7 @@ nav{
     transition: box-shadow 0.3s ease;  
     white-space: nowrap;  
     width: 100%;
-    padding:1rem ;  
+    padding:0rem ;  
     
 }   
     nav:hover {
@@ -826,6 +826,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
