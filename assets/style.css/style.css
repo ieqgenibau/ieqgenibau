@@ -733,7 +733,7 @@ nav{
     .nav-simbolos img{
     height: 11vh;
     width: auto;
-    margin-left: -1rem;   
+    margin-left: -1.4rem;   
         margin-top: -2.0rem;
         margin-bottom: -2rem;      
         padding: 0;
@@ -828,6 +828,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
