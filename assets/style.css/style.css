@@ -743,7 +743,7 @@ nav{
     opacity: 0.5;
 }
 .nav-list a{
-    padding-left:1rem;
+    padding-left:3.5rem;
 }
 
 .social-icones{
@@ -828,6 +828,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
