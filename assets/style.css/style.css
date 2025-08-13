@@ -771,7 +771,7 @@ body.overlay-ativo footer {
     }
 
     .nav-simbolos img {
-        height: 12vh;
+        height: 10vh;
         width: auto;
         margin-left: 0rem;
         margin-top: -2.0rem;
@@ -785,7 +785,7 @@ body.overlay-ativo footer {
     }
 
     .nav-list a {
-        padding-left: 2.5rem;
+        padding-left: 1.0rem;
     }
 
     .social-bar {
@@ -803,12 +803,13 @@ body.overlay-ativo footer {
 
     .social-bar a {
         margin-left: -0.7rem;
+        
     }
 
     .social-icones {
         padding: 0;
         justify-self: center; /* Garantir centralização */
-        margin-bottom: -1.1rem;
+        margin-bottom: -2.2rem;
     }
 
     .social-icones .social-link {
