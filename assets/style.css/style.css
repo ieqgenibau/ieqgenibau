@@ -115,7 +115,7 @@ p{
   width: auto;
   justify-content:space-around;
   margin-bottom: 8px;
-  margin-left: 0;
+  margin-left: -0,4rem;
   align-items: center;
   transition: all 0.3s ease;
 }
@@ -828,6 +828,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
