@@ -343,7 +343,7 @@ nav{
     transition: box-shadow 0.3s ease;  
     white-space: nowrap;  
     width: 100%;
-    padding:3rem ;  
+    padding:1rem ;  
     
 }   
     nav:hover {
@@ -782,6 +782,9 @@ nav{
 
 }
 @media (min-width:1025px) and (max-width:1440px){
+        nav{
+            padding:1rem ; 
+    }
     .nav-simbolos img{
   margin:0;  
   height: 15vh;  
@@ -823,6 +826,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
