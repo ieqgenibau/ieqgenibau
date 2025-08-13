@@ -597,7 +597,7 @@ padding:1rem;
        padding-top:3.5rem;
        padding-bottom: 3rem;
        margin:0; 
-       padding: 0; 
+       padding: 1rem; 
     }
 
     .nav-list{
@@ -824,6 +824,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
