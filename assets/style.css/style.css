@@ -555,13 +555,14 @@ body.overlay-ativo footer {
         transform: translateX(0);
     }
 
-    .nav-simbolos {
-        margin-left: 0;
-        margin-top: -2.5rem;
+    .nav-simbolos img {
+        height: 10vh;
+        width: auto;
+        margin-left: -9.8rem;
+        margin-top: -2.0rem;
         margin-bottom: -2rem;
-        transform: scale(0.5);
-        padding: 2rem;
-        /* Manter estas margens e transformações para o ajuste responsivo */
+        padding: 0;
+        /* Manter estas margens para o ajuste responsivo */
     }
 
     .nav-simbolos img:hover {
@@ -701,9 +702,9 @@ body.overlay-ativo footer {
     }
 
     .nav-simbolos img {
-        height: 23vh;
+        height: 15vh;
         width: auto;
-        margin-left: -9.8rem;
+        margin-left: 0rem;
         margin-top: -2.0rem;
         margin-bottom: -2rem;
         padding: 0;
@@ -770,7 +771,7 @@ body.overlay-ativo footer {
     }
 
     .nav-simbolos img {
-        height: 15vh;
+        height: 12vh;
         width: auto;
         margin-left: 0rem;
         margin-top: -2.0rem;
@@ -807,6 +808,7 @@ body.overlay-ativo footer {
     .social-icones {
         padding: 0;
         justify-self: center; /* Garantir centralização */
+        margin-bottom: -1.1rem;
     }
 
     .social-icones .social-link {
