@@ -734,7 +734,7 @@ nav{
     height: 11vh;
     width: auto;
     margin-left: 0rem;   
-        margin-top: -2.0rem;
+        margin-top: -5.0rem;
         margin-bottom: -2rem;      
         padding: 0;
     }
@@ -828,6 +828,7 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
 
 
 
