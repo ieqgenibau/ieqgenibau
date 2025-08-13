@@ -26,7 +26,7 @@ html {
 }
 
 body{
-    background: #F2F2F2 ;
+    background: #ffffff ;
     background-size: cover;
     z-index: 10;
     display: flex; /*leva o footer para o fundo da página*/
@@ -40,7 +40,7 @@ body{
       
 
 main{
-    background: #F2F2F2 ;
+    background: #ffffff ;
     background-size: cover;    
     flex: 1;  
     z-index: 100;
@@ -115,7 +115,7 @@ p{
   width: auto;
   justify-content:space-around;
   margin-bottom: 8px;
-  margin-left: 3.5rem;
+  margin-left: 0;
   align-items: center;
   transition: all 0.3s ease;
 }
@@ -273,7 +273,7 @@ p{
     background-color:#C4D2D2;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 0vw;
     width: 100vw;
     height: 9vh;
@@ -343,7 +343,7 @@ nav{
     transition: box-shadow 0.3s ease;  
     white-space: nowrap;  
     width: 100%;
-    padding:0rem ;  
+    padding:1rem ;  
     
 }   
     nav:hover {
@@ -597,7 +597,7 @@ padding:1rem;
        padding-top:3.5rem;
        padding-bottom: 3rem;
        margin:0; 
-       padding: 1.2rem; 
+       padding: 0; 
     }
 
     .nav-list{
@@ -646,16 +646,15 @@ margin-left: 0;
           
   display: flex; 
   flex-direction: row;  
-  gap: 0.5rem;
+  gap: 2rem;
   margin-left: 0;
     }
     .nav-simbolos{
         margin-left: 0;        
         margin-top: -2.5rem;
         margin-bottom: -2rem;
-        transform: scale(1.5);
+        transform: scale(0.9);
         padding: 1.5rem;
-        margin-top: 1.0rem;
     }
 
 
@@ -719,7 +718,7 @@ margin-left: 0;
 nav{
     height: 19vh;    
     width: 100%;
-    padding: 1rem; 
+    padding: 2rem; 
   
 }
     nav:hover {
@@ -783,21 +782,19 @@ nav{
 
 }
 @media (min-width:1025px) and (max-width:1440px){
-        nav{
+    nav{
             padding:1rem ; 
+
     }
     .nav-simbolos img{
   margin:0;  
   height: 15vh;  
   width: auto;
-  margin-left: 1.3rem;
+  margin-left: 1.5rem;
     }
     .nav-list{
     gap: 4rem;   
     margin-right: 2rem;    
-}
-    .social-bar{
-    padding: 1.5rem;
 }
 }
 @keyframes navLinkFade{
@@ -827,18 +824,6 @@ nav{
 .mobile-menu.ativo .line3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
