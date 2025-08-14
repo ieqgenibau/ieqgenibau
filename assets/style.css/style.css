@@ -742,10 +742,11 @@ body.overlay-ativo footer {
         margin-right: 2rem;
     }
     .social-bar{
-        height: 14vh !important;
+        height: 12vh !important;
     }
     /* social-bar e social-icones herdam os estilos base aqui, que já estão corretos com o align-items adicionado */
 }
+
 
 
 
