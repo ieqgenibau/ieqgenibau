@@ -798,7 +798,7 @@ body.overlay-ativo footer {
     }
 
     .social-bar {
-        height: 11vh;
+        height: 15vh;
         padding: 0 2.8rem;
     }
 
@@ -810,7 +810,7 @@ body.overlay-ativo footer {
     .social-icones {
         padding: 0;
         justify-self: center; /* Garantir centralização */
-        margin-bottom: -2.2rem;
+        margin-bottom: -2.4rem;
     }
 
     .social-icones .social-link {
