@@ -310,7 +310,7 @@ nav a:hover {
     grid-area: social-icons; /* Atribui esta área ao elemento */
     display: flex; /* Mantém o flexbox para os ícones internos */
     flex-direction: row;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     gap: 2rem;
     margin-left: 0;
     justify-self: center; /* Adicionado: Centraliza o bloco de ícones dentro de sua área no grid */
@@ -606,7 +606,7 @@ body.overlay-ativo footer {
         gap: 1rem;
         margin-left: 0;
         justify-self: center; /* Garantir centralização no mobile */
-        margin-top: -0.6rem;
+        margin-top: -0.5rem;
     }
     .social-icones .social-link {
         height: 2.5rem;
@@ -743,4 +743,5 @@ body.overlay-ativo footer {
     }
     /* social-bar e social-icones herdam os estilos base aqui, que já estão corretos com o align-items adicionado */
 }
+
 
