@@ -296,7 +296,7 @@ nav a:hover {
     padding: 1.5rem;
     margin-top: 0vw;
     width: 100vw;
-    height: 14vh;
+    height: 20vh;
     background-size: cover;
     position: sticky;
 }
@@ -741,8 +741,12 @@ body.overlay-ativo footer {
         gap: 4rem;
         margin-right: 2rem;
     }
+    .social-bar{
+        height: 14vh;
+    }
     /* social-bar e social-icones herdam os estilos base aqui, que já estão corretos com o align-items adicionado */
 }
+
 
 
 
