@@ -687,7 +687,7 @@ body.overlay-ativo footer {
         padding-left: 1.0rem;
     }
     .social-bar {
-        height: 15vh; /* Combinado de 7vh e 15vh, mantendo o último */
+        height: 9vh; /* Combinado de 7vh e 15vh, mantendo o último */
         padding: 0 2.8rem;
         display: grid; /* Garante que é grid */
         grid-template-areas: ". social-icons .";
@@ -743,5 +743,6 @@ body.overlay-ativo footer {
     }
     /* social-bar e social-icones herdam os estilos base aqui, que já estão corretos com o align-items adicionado */
 }
+
 
 
