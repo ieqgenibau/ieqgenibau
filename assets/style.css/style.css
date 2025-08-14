@@ -557,7 +557,7 @@ body.overlay-ativo footer {
         margin: 0;
         padding: 1rem;
         grid-template-areas: "logo . mobile-menu-toggle";
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: 1fr 1fr auto;
     }
     .nav-list {
         position: absolute;
@@ -743,7 +743,6 @@ body.overlay-ativo footer {
     }
     /* social-bar e social-icones herdam os estilos base aqui, que já estão corretos com o align-items adicionado */
 }
-
 
 
 
