@@ -693,6 +693,7 @@ body.overlay-ativo footer {
         gap: 1rem;
         margin-left: 0;
         justify-self: center; /* Garantir centralização no mobile */
+        margin-top: -0.6rem;
     }
 
     .social-icones .social-link {
@@ -789,7 +790,7 @@ body.overlay-ativo footer {
     }
 
     .social-bar {
-        height: 5vh;
+        height: 7vh;
         display: grid; /* Garante que é grid */
         grid-template-areas: ". social-icons .";
         grid-template-columns: 1fr auto 1fr;
