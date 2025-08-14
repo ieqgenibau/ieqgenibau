@@ -700,7 +700,7 @@ body.overlay-ativo footer {
     .social-icones {
         padding: 0;
         justify-self: center; /* Garantir centralização */
-        margin-bottom: -2.6rem;
+        margin-bottom: -2.0rem;
     }
     .social-icones .social-link {
         height: 2.5rem;
@@ -743,6 +743,7 @@ body.overlay-ativo footer {
     }
     /* social-bar e social-icones herdam os estilos base aqui, que já estão corretos com o align-items adicionado */
 }
+
 
 
 
