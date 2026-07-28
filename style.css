@@ -1043,7 +1043,7 @@ header{
     .inicio{
         height: auto;
         min-height: 100vh;
-        padding: 6rem 3.5rem 8rem;
+        padding: 3rem 3.5rem 3rem;
     }
 
     .bemvindo{
@@ -1082,7 +1082,7 @@ header{
     /* ---------- SOBRE ---------- */
 
     .sobre{
-        padding: 6rem 1.5rem 3rem;
+        padding: 3rem 1.5rem 3rem;
     }
 
     .sobre-topo{
@@ -1092,6 +1092,8 @@ header{
     }
 
     .textossobre{
+        display: contents;
+        flex-direction: column;
         width: 100%;
         max-width: 100%;
     }
@@ -1117,6 +1119,7 @@ header{
 
     .imagemsobre{
         width: 100%;
+        order: 1;
     }
 
     .imagemsobre img{
@@ -1128,6 +1131,7 @@ header{
 
     .botaofaleconosco{
         width: 100%;
+        order: 2;
     }
 
     .faleconosco{
@@ -1136,11 +1140,14 @@ header{
     }
 
     .linhassobre{
-        grid-template-columns: 1fr;
-        width: 100%;
-        row-gap: 2rem;
+        display: none;
     }
-
+    .footersobre{
+        margin-top: 1rem;
+    }
+    .mensagensfooter{
+        margin-top: -2rem;
+    }
     .frases{
         grid-template-columns: 1fr;
         width: 100%;
@@ -1208,7 +1215,7 @@ header{
 
     .area-versiculo{
         min-height: 100vh;
-        padding: 6rem 1.5rem 3rem;
+        padding: 3rem 1.5rem 3rem;
         gap: 2rem;
     }
 
@@ -1228,7 +1235,7 @@ header{
     .contato{
         grid-template-columns: 1fr;
         min-height: auto;
-        padding: 6rem 1.5rem 3rem;
+        padding: 3rem 1.5rem 3rem;
         row-gap: 3rem;
     }
 
