@@ -28,5 +28,13 @@ menuToggle.addEventListener('click', function () {
 overlayMenu.addEventListener('click', fecharMenu);
 
 navLinks.forEach(function (link) {
-    link.addEventListener('click', fecharMenu);
+    link.addEventListener('click', function () {
+        navLinks.forEach(function (outroLink) {
+            outroLink.classList.remove('link-selecionado');
+        });
+
+        link.classList.add('link-selecionado');
+
+        fecharMenu();
+    });
 });
