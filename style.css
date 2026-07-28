@@ -1053,9 +1053,9 @@ header{
 
     .igreja{
         width: 100%;
-        font-size: 60px;
+        font-size: 70px;
         line-height: 1.2;
-        max-width: 400px; /* ajuste o valor conforme desejar */
+        max-width: 350px; /* ajuste o valor conforme desejar */
         margin: 0 auto;
         text-align: center;
     }
