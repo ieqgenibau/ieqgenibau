@@ -1,0 +1,1365 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*cores início*/
+    --font-main:'Times New Roman', Times, serif;
+    --text-color:#000;
+    --item-color: #B3B3B3;
+    --item-colorhover: #FFD663;
+    --amarelo-color: #FFD663;
+    --branco-color: #fff;
+    --cinza-color: #868991;
+    --botaoinicio-colorhover: #FFE8A8;
+
+    /*cores sobre*/
+    --fundosobre-color:#E5E5E5;
+    --text-bemvindo:#A58C44;
+    --botao-color: #1A2745;
+    --botao-colorhover: #283b68; 
+    
+    /*cores culto*/
+    --fundoculto-color:#141F3E;
+
+    /*cores area-versículo*/
+    --fundoareaversiculo:#07101E;
+}
+    
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background: #fff;
+    line-height: 1.6;
+    margin-top: 5rem;    
+}
+
+header{       
+    list-style: none;         
+}
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#0D1427 ;
+    width: 100%;
+    height: 6rem;
+    padding: 2rem 1rem;    
+    top: 0;
+    left: 0;
+    z-index: 1000;     
+    
+      
+}
+
+.logo{
+    display: flex;  
+    align-items: center; 
+    gap: 1rem;
+    font-size: 16px;     
+    cursor: pointer;  
+
+}
+.ieq{
+    color: #FFD663;
+    font-family: "Cinzel", serif;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;    
+    cursor: pointer;  
+    font-family: "Judson", serif;    
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: var(--item-color);
+    transition: color 0.3s ease; 
+}
+
+.nav-item:hover a{
+    color: var(--item-colorhover);    
+}
+
+.inicio{
+    position: relative; /* necessário para o pseudo-elemento funcionar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    height: 100vh;  
+    padding-top: 1rem;
+    z-index: 0; /* opcional, mas ajuda a evitar conflitos de camadas */   
+    
+}
+
+.inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('asets/IMG_7986.PNG');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* aqui você controla a opacidade só da imagem */
+  z-index: -1; /* joga a imagem para trás do conteúdo */
+}
+
+.bemvindo{
+    font-family:"Cinzel", serif;
+    color: var(--amarelo-color);
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;         
+}
+
+.igreja{    
+    font-family:"Cinzel", serif;
+    color: var(--branco-color);
+    font-size: 65px;
+    font-weight: bold;    
+    width: 650px;
+    margin: 0 auto; 
+    line-height: 1.4;     
+}
+
+.versiculo{
+    max-width: 800px;
+    margin: 0 auto;        
+    font-family:"Cinzel", serif;
+    color: var(--branco-color);
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: rgb(255, 255, 255) 0em 0.02em 0.5em;
+    margin-top: 1rem;    
+}
+
+.botoesinicio{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem; 
+
+}
+
+.botaoinicio1{
+    display: flex;
+    align-items: center;
+    margin: 0;    
+    justify-content: center;
+    color:var(--text-color);
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    background: var(--amarelo-color);
+    padding: 10px 20px;
+    width: 17%;
+    height: 3rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.botaoinicio1:hover{
+        background: var(--botaoinicio-colorhover) ;
+}
+
+.botaoinicio2{
+    display: flex;
+    align-items: center;
+    margin: 0;    
+    justify-content: center;
+    color:var(--cinza-color);
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid;
+    border-color: var(--cinza-color);
+    padding: 10px 20px;
+    width: 17%;
+    height: 3rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.botaoinicio2:hover{    
+    border-color: var(--amarelo-color);
+    color:var(--item-colorhover);
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fundosobre-color);
+    min-height: 100vh;
+    padding: 8rem 0 5rem;
+    gap: 3rem;
+}
+
+.sobre-topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1400px;
+    gap: 3rem;
+}
+
+.textossobre{
+    max-width: 550px;
+    margin-left: 0;    
+}
+
+.nossahistoria{
+    font-family:"Cinzel", serif, bolder;
+    color: var(--text-bemvindo);
+    font-size: 25px;
+    font-weight:normal;
+    margin-top: 0.5rem;    
+}
+
+.lugardefe{
+    font-family:"Cinzel", serif;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0.5rem;    
+    text-align: left;
+}
+
+.historiasobre{
+    max-width: 542px;
+    margin-top: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.doutrinas{
+    margin-left: 2rem;
+}
+
+.botaofaleconosco{
+    margin-top: 0.5rem;
+}
+
+
+
+.imagemsobre{
+    margin-bottom: 0;
+}
+
+
+.imagemsobre img{
+    box-shadow: -32px -28px 7px -15px #B4B6D4;
+    height: 100%;
+    width: 100%;
+    margin-top: 17rem;    
+}
+
+.botaofaleconosco{
+    display: flex;       
+}
+
+.faleconosco{
+    display: flex;
+    align-items: center;
+    margin: 0;    
+    justify-content: center;
+    color:var(--branco-color);
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    background: var(--botao-color);
+    padding: 10px 20px;
+    width: 40%;
+    height: 3rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    margin-top: 3rem; 
+}
+
+.faleconosco:hover{   
+    background:var(--botao-colorhover);
+}
+
+.footersobre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.linhassobre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    width: 80%;
+    max-width: 1400px;
+    column-gap: 3rem;                       /* espaço entre colunas */
+}
+
+.linha1, .linha2, .linha3{
+    height: 1.5px;
+    background-color: #A58C44;
+}
+
+.mensagensfooter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0rem;
+}
+
+.frases{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    max-width: 1400px;
+    column-gap: 3rem;
+}
+
+.frase1 h3,
+.frase2 h3,
+.frase3 h3{
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    margin: -2rem 0 0;  /* puxa o título um pouco pra cima */
+    padding: 0;
+}
+
+.cultos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--fundoculto-color);
+    min-height: 100vh;
+    padding: 8rem 0 5rem;        
+}
+
+.venha-cultos{
+    font-family:"Cinzel", serif;
+    color: var(--amarelo-color);
+    font-size: 15px;
+    font-weight: normal;              
+}
+
+.programacao-cultos{
+    font-family:"Cinzel", serif;
+    color: var(--branco-color);
+    font-size: 40px;
+    font-weight: normal;        
+    text-align: left;
+    margin-top: 1rem;     
+}
+
+.programacoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 94%; /* aumentado de 80% para 92% */
+    max-width: 1600px; /* aumentado de 1400px */
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin-top: 3rem;
+}
+
+.programacao1 h1,
+.programacao2 h1,
+.programacao3 h1,
+.programacao4 h1,
+.programacao5 h1,
+.programacao6 h1{
+    font-family: "Cinzel", serif;
+    font-size: 11px;    
+    padding: 0;
+    color: var(--amarelo-color);    
+}
+
+.programacao1 h2,
+.programacao2 h2,
+.programacao3 h2,
+.programacao4 h2,
+.programacao5 h2,
+.programacao6 h2{
+    font-family: "Cinzel", serif;
+    font-size: 15px;    
+    padding: 0;
+    color: var(--branco-color);    
+}
+
+.programacao1 p,
+.programacao2 p,
+.programacao3 p,
+.programacao4 p,
+.programacao5 p,
+.programacao6 p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;    
+    padding: 0;
+    color: var(--cinza-color);    
+}
+
+
+.data-hora{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem; /* opcional: respiro nas laterais */
+    margin: 0;
+    padding: 0;
+    color: var(--cinza-color);     
+}
+
+.hora{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;         
+}
+
+.programacao1 .horario-digitos,
+.programacao2 .horario-digitos,
+.programacao3 .horario-digitos,
+.programacao4 .horario-digitos,
+.programacao5 .horario-digitos,
+.programacao6 .horario-digitos {
+    color: var(--cinza-color);
+}
+
+.hora .bi-clock{
+    position: relative;
+    top: -4px; /* ajuste esse valor conforme necessário */
+}
+
+.programacao1,
+.programacao2,
+.programacao3,
+.programacao4,
+.programacao5,
+.programacao6{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content:center;
+    margin: 0;
+    padding: 0rem 2rem;
+    background: transparent;
+    border: 2px solid;
+    border-color: var(--cinza-color);    
+    height: 10rem;
+    width: 100%;
+    color: #E5E5E5;
+    row-gap: 0.5rem;     
+    transition: all 0.3s ease;  
+}
+
+.programacao1:hover,
+.programacao2:hover,
+.programacao3:hover,
+.programacao4:hover,
+.programacao5:hover,
+.programacao6:hover{
+    background: var(--botao-colorhover);
+}
+
+.area-versiculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--fundoareaversiculo);
+    min-height: 100vh;
+    padding: 8rem 0 5rem;
+    gap: 3rem;
+}
+
+.area-versiculo h1{
+    font-family: "Cinzel", serif;
+    color: var(--amarelo-color);
+    font-size: 15px; 
+}
+
+.area-versiculo p{
+    max-width: 700px;  
+    text-align: center;    
+    font-family:"Cinzel", serif;
+    color: var(--branco-color);
+    font-size: 30px;    
+    text-shadow: rgb(255, 255, 255) 0em 0.02em 0.5em;        
+}
+
+.area-versiculo h2{
+    font-family: "Cinzel", serif;
+    color: var(--amarelo-color);
+    font-size: 15px;
+    margin-top: 2rem; 
+}
+
+.traco{
+    height: 6rem;
+    width: 0.1rem;
+    background-color: var(--amarelo-color);
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    column-gap: 3rem;
+
+    padding: 5rem max(10%, calc((100% - 1400px) / 2)) 5rem;
+
+    background-color: var(--fundosobre-color);
+}
+
+.coluna1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 3rem;
+}
+
+
+.coluna1 .fale{
+    font-family:"Cinzel", serif;
+    color: var(--text-bemvindo);
+    font-size: 15px;
+    font-weight: normal;              
+}
+
+.coluna1 h2{
+    font-family:"Cinzel", serif;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+       
+    text-align: left;
+    width: 526px;
+}
+
+.coluna1 P{
+    max-width: 542px;
+    margin-top: 0.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.endereco{
+    display:block;
+    align-items: center;
+    padding: 0;
+    width: 300px;
+    
+}
+
+.endereco, h1{
+    font-family:"Cinzel", serif;
+    font-size: 12px ;
+    margin-top:2rem;    
+}
+
+.endereco p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: -0.3rem; 
+   
+}
+
+.endereco .bi-geo-alt{
+    position: relative;
+    top: 0px; 
+    margin-right: 0.5rem;
+}
+
+.telefone{
+    display:block;
+    align-items: center;
+    padding: 0;
+    width: 300px;
+}
+
+.telefone, h1{
+    font-family:"Cinzel", serif;
+    font-size: 12px ;
+    margin-top:1rem;    
+}
+
+.telefone p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: -0.3rem;    
+}
+
+.telefone .bi-telephone{
+    position: relative;
+    top: 0px; 
+    margin-right: 0.5rem;
+}
+
+.email{
+    display:block;
+    align-items: center;
+    padding: 0;
+    width: 300px;
+}
+
+.email, h1{
+    font-family:"Cinzel", serif;
+    font-size: 12px ;
+    margin-top:1rem;    
+}
+
+.email p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: -0.3rem;    
+}
+
+.email .bi-envelope{
+    position: relative;
+    top: 0px; 
+    margin-right: 0.5rem;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;       
+    margin-top: 3rem;
+}
+
+.coluna2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 100%;
+    max-width: 550px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo label{
+    font-family: "Cinzel", serif;
+    color: var(--text-color);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.campo input,
+.campo textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #A5A5A5;
+    background-color: #fff;
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo input{
+    height: 3rem;
+}
+
+.campo textarea{
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus{
+    border-color: var(--botao-color);
+    box-shadow: 0 0 0 2px rgba(26, 39, 69, 0.15);
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder{
+    color: #999;
+}
+
+.coluna2 button{
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--botao-color);
+    color: var(--branco-color);
+    font-family: "Cinzel", serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coluna2 button:hover{
+    background-color: var(--botao-colorhover);
+}
+
+.footer{
+    background-color: #0D1427;
+    color: var(--branco-color);
+    padding: 4rem 10% 1.5rem;
+}
+
+.footer-conteudo{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img{
+    width: 65px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h2{
+    color: var(--amarelo-color);
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.footer-logo p{
+    color: var(--cinza-color);
+    font-size: 16px;
+    margin-top: 0.8rem;
+}
+
+.footer h3{
+    color: var(--amarelo-color);
+    font-family: "Cinzel", serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer-links a{
+    color: var(--cinza-color);
+    font-family: "Judson", serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: var(--amarelo-color);
+}
+
+.footer-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-contato p{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    color: var(--cinza-color);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-contato i{
+    color: var(--amarelo-color);
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.footer-final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(134, 137, 145, 0.4);
+}
+
+.footer-final p{
+    color: var(--cinza-color);
+    font-size: 14px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 1rem;
+}
+
+.redes-sociais a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--cinza-color);
+    color: var(--cinza-color);
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.redes-sociais a:hover{
+    color: var(--amarelo-color);
+    border-color: var(--amarelo-color);
+}
+
+/* ==========================================================
+   RESPONSIVIDADE
+   ========================================================== */
+
+/* ---------- TABLET (até 1024px) ---------- */
+@media (max-width: 1024px){
+
+    .nav-list{
+        gap: 1.5rem;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+    }
+
+    .igreja{
+        width: 90%;
+        font-size: 48px;
+    }
+
+    .versiculo{
+        max-width: 90%;
+        font-size: 18px;
+    }
+
+    .botaoinicio1,
+    .botaoinicio2{
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .sobre-topo{
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .textossobre{
+        max-width: 100%;
+    }
+
+    .imagemsobre img{
+        margin-top: 0;
+    }
+
+    .programacoes{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .linhassobre,
+    .frases{
+        width: 90%;
+    }
+
+    .contato{
+        padding: 5rem 6% 5rem;
+    }
+
+    .coluna1 h2{
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .footer-conteudo{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .footer-logo{
+        grid-column: 1 / -1;
+    }
+}
+
+/* ---------- MOBILE GRANDE / TABLET PEQUENO (até 768px) ---------- */
+/* ==========================================================
+   RESPONSIVIDADE PARA CELULARES + MENU HAMBÚRGUER
+   ========================================================== */
+
+@media (max-width: 768px){
+
+    /* ---------- MENU PRINCIPAL ---------- */
+
+    body{
+        margin-top: 4rem;
+        overflow-x: hidden;
+    }
+
+    .nav-bar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        min-height: 4rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .logo{
+        max-width: 80%;
+        gap: 0.6rem;
+        font-size: 12px;
+    }
+
+    .logo img{
+        width: 38px;
+        height: auto;
+    }
+
+    .ieq{
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    /* Botão hambúrguer */
+    .menu-toggle{
+        display: flex;
+        position: relative;
+        z-index: 1100;
+    }
+
+    /* Menu escondido fora da tela */
+    .nav-list{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
+        padding: 7rem 2rem 2rem;
+        background-color: #0D1427;
+        transition: right 0.35s ease;
+        z-index: 1050;
+    }
+
+    /* Menu aberto */
+    .nav-list.ativo{
+        right: 0;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        letter-spacing: 2px;
+    }
+
+    .nav-item a{
+        font-size: 16px;
+    }
+
+    /* Fundo escurecido quando o menu estiver aberto */
+    .overlay-menu{
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: 1040;
+    }
+
+    .overlay-menu.ativo{
+        display: block;
+    }
+
+
+    /* ---------- INÍCIO ---------- */
+
+    .inicio{
+        height: auto;
+        min-height: 100vh;
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .bemvindo{
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .igreja{
+        width: 100%;
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .versiculo{
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .botoesinicio{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .botaoinicio1,
+    .botaoinicio2{
+        width: 80%;
+        font-size: 16px;
+    }
+
+
+    /* ---------- SOBRE ---------- */
+
+    .sobre{
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .sobre-topo{
+        flex-direction: column;
+        width: 100%;
+        gap: 2.5rem;
+    }
+
+    .textossobre{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nossahistoria{
+        font-size: 20px;
+    }
+
+    .lugardefe{
+        width: 100%;
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .historiasobre{
+        max-width: 100%;
+        font-size: 17px;
+    }
+
+    .doutrinas{
+        margin-left: 1.5rem;
+    }
+
+    .imagemsobre{
+        width: 100%;
+    }
+
+    .imagemsobre img{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        box-shadow: -15px -12px 7px -10px #B4B6D4;
+    }
+
+    .botaofaleconosco{
+        width: 100%;
+    }
+
+    .faleconosco{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .linhassobre{
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 2rem;
+    }
+
+    .frases{
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 2rem;
+    }
+
+    .frase1 h3,
+    .frase2 h3,
+    .frase3 h3{
+        margin: 0;
+        font-size: 22px;
+    }
+
+
+    /* ---------- CULTOS ---------- */
+
+    .cultos{
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .venha-cultos{
+        width: 100%;
+        text-align: center;
+    }
+
+    .programacao-cultos{
+        font-size: 28px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .programacoes{
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .programacao1,
+    .programacao2,
+    .programacao3,
+    .programacao4,
+    .programacao5,
+    .programacao6{
+        min-height: 12rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .data-hora{
+        gap: 1rem;
+    }
+
+    .programacao1 p,
+    .programacao2 p,
+    .programacao3 p,
+    .programacao4 p,
+    .programacao5 p,
+    .programacao6 p{
+        font-size: 14px;
+    }
+
+
+    /* ---------- VERSÍCULO ---------- */
+
+    .area-versiculo{
+        min-height: 100vh;
+        padding: 6rem 1.5rem 3rem;
+        gap: 2rem;
+    }
+
+    .area-versiculo p{
+        max-width: 100%;
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .traco{
+        height: 4rem;
+    }
+
+
+    /* ---------- CONTATO ---------- */
+
+    .contato{
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 6rem 1.5rem 3rem;
+        row-gap: 3rem;
+    }
+
+    .coluna1,
+    .coluna2{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .coluna1 h2{
+        width: 100%;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .coluna1 p{
+        max-width: 100%;
+        font-size: 17px;
+    }
+
+    .endereco,
+    .telefone,
+    .email{
+        width: 100%;
+    }
+
+    .coluna2 form{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .campo input,
+    .campo textarea{
+        width: 100%;
+    }
+
+    .coluna2 button{
+        width: 100%;
+        align-self: center;
+        font-size: 13px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer{
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-conteudo{
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-logo{
+        grid-column: auto;
+    }
+
+    .footer-final{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .footer-final p{
+        font-size: 13px;
+    }
+}
+/* ---------- MOBILE PEQUENO (até 480px) ---------- */
+@media (max-width: 480px){
+
+    .igreja{
+        font-size: 26px;
+    }
+
+    .bemvindo{
+        font-size: 16px;
+    }
+
+    .versiculo{
+        font-size: 14px;
+    }
+
+    .botaoinicio1,
+    .botaoinicio2{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .nossahistoria{
+        font-size: 20px;
+    }
+
+    .lugardefe{
+        font-size: 22px;
+    }
+
+    .historiasobre{
+        font-size: 16px;
+    }
+
+    .faleconosco{
+        font-size: 16px;
+    }
+
+    .programacao-cultos{
+        font-size: 22px;
+    }
+
+    .area-versiculo p{
+        font-size: 18px;
+    }
+
+    .coluna1 h2{
+        font-size: 24px;
+    }
+
+    .coluna1 p{
+        font-size: 16px;
+    }
+
+    .campo input,
+    .campo textarea{
+        font-size: 14px;
+    }
+
+    .coluna2 button{
+        width: 100%;
+        align-self: center;
+        font-size: 13px;
+    }
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle .linha{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--branco-color);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estado aberto: transforma as 3 linhas em um X */
+.menu-toggle.aberto .linha:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.aberto .linha:nth-child(2){
+    opacity: 0;
+}
+
+.menu-toggle.aberto .linha:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}
