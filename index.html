@@ -257,74 +257,92 @@
         </section>
 
         <section id="contato" class="contato">
-
             <div class="coluna1">
                 <h1 class="fale">FALE CONOSCO</h1>
                 <h2>VENHA FAZER PARTE DA NOSSA FAMÍLIA</h2>
-                <p>
-                    Você é sempre bem-vindo! Entre em contato conosco ou simplesmente apareça num dos nossos cultos.
-                </p>
-
+                <p>Você é sempre bem‑vindo! Entre em contato conosco ou simplesmente apareça num dos nossos cultos.</p>
+        
                 <div class="endereco">
-                    
                     <h1><i class="bi bi-geo-alt"></i>ENDEREÇO</h1>
                     <p>Rua Dr. Perilo Teixeira, 300 — Genibaú Fortaleza, CE — 60534-080</p>
                 </div>
-
-                <div class="telefone">                    
+        
+                <div class="telefone">
                     <h1><i class="bi bi-telephone"></i>TELEFONE</h1>
-                    <p>(31) 3333-4444</p>
+                    <p>(31) 3333‑4444</p>
                 </div>
-
-                <div class="email">                    
-                    <h1><i class="bi bi-envelope"></i>E-MAIL</h1>
-                    <p>ieqgenibau25@gmail.com </p>
+        
+                <div class="email">
+                    <h1><i class="bi bi-envelope"></i>E‑MAIL</h1>
+                    <p>ieqgenibau25@gmail.com</p>
                 </div>
             </div>
-
+        
+            <!-- ==== FORMULÁRIO ==== -->
             <div class="coluna2">
-                <form action="">
+                <form
+                    id="meuForm"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSd3QgbLkgBlMcf_YwYHSaYQ17RoYjkg9cy97cWyjlRfROULqw/formResponse"
+                    method="POST"
+                    target="formulario_oculto"
+                >
                     <div class="campo">
                         <label for="primeiro_nome">NOME</label>
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             id="primeiro_nome"
-                            name="primeiro_nome"
+                            name="entry.2005620554"
                             placeholder="Seu nome"
+                            required
                         >
                     </div>
-
+        
                     <div class="campo">
                         <label for="sobrenome">SOBRENOME</label>
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             id="sobrenome"
-                            name="sobrenome"
+                            name="entry.1037070480"
                             placeholder="Seu sobrenome"
+                            required
                         >
                     </div>
-
+        
                     <div class="campo">
-                        <label for="email">E-MAIL</label>
-                        <input 
-                            type="email" 
+                        <label for="email">E‑MAIL</label>
+                        <input
+                            type="email"
                             id="email"
-                            name="email"
+                            name="entry.1045781291"
                             placeholder="seu@email.com"
+                            required
                         >
                     </div>
-
+        
                     <div class="campo">
                         <label for="mensagem">MENSAGEM</label>
-                        <textarea 
+                        <textarea
                             id="mensagem"
-                            name="mensagem"
+                            name="entry.839337160"
                             placeholder="Como podemos ajudá-lo?"
+                            required
                         ></textarea>
                     </div>
-
+        
                     <button type="submit">ENVIAR MENSAGEM</button>
                 </form>
+        
+                <!-- IFRAME invisível que recebe a resposta do Google -->
+                <iframe
+                    name="formulario_oculto"
+                    id="formulario_oculto"
+                    style="display:none;"
+                ></iframe>
+        
+                <!-- Mensagem de feedback (inicialmente oculta) -->
+                <p id="mensagemSucesso" class="mensagem-sucesso">
+                    Mensagem enviada com sucesso!
+                </p>
             </div>
         </section>
         <footer class="footer">

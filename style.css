@@ -725,6 +725,13 @@ header{
     background-color: var(--botao-colorhover);
 }
 
+.mensagem-sucesso {
+    display: none;
+    margin-top: 1rem;
+    color: #267a35;
+    font-size: 16px;
+}
+
 .footer{
     background-color: #0D1427;
     color: var(--branco-color);
@@ -951,6 +958,7 @@ header{
         grid-column: 1 / -1;
     }
 }
+
 
 /* ---------- MOBILE GRANDE / TABLET PEQUENO (até 768px) ---------- */
 /* ==========================================================

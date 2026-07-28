@@ -38,3 +38,26 @@ navLinks.forEach(function (link) {
         fecharMenu();
     });
 });
+
+const formulario = document.getElementById('meuForm');
+const mensagemSucesso = document.getElementById('mensagemSucesso');
+
+formulario.addEventListener('submit', function () {
+    const botao = formulario.querySelector('button');
+
+    botao.disabled = true;
+    botao.textContent = 'ENVIANDO...';
+
+    setTimeout(function () {
+        formulario.reset();
+
+        mensagemSucesso.style.display = 'block';
+
+        botao.disabled = false;
+        botao.textContent = 'ENVIAR MENSAGEM';
+
+        setTimeout(function () {
+            mensagemSucesso.style.display = 'none';
+        }, 5000);
+    }, 1000);
+});
