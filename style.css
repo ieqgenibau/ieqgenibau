@@ -976,19 +976,21 @@ header{
     }
 
     .logo{
-        max-width: 80%;
-        gap: 0.6rem;
-        font-size: 12px;
+        flex: 1;
+        gap: 0.5rem;
+        min-width: 0;
     }
 
     .logo img{
-        width: 38px;
-        height: auto;
+        width: 40px;
+        flex-shrink: 0;
     }
 
     .ieq{
-        font-size: 10px;
-        line-height: 1.3;
+        font-size: 12px;
+        line-height: 1;
+        white-space: nowrap;
+        overflow: visible;
     }
 
     /* Botão hambúrguer */
