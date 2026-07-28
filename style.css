@@ -1259,7 +1259,8 @@ header{
     .endereco,
     .telefone,
     .email{
-        width: 100%;        
+        width: 100%; 
+        color: inherit;
         text-decoration: none;
     }
 
