@@ -838,6 +838,28 @@ header{
     color: var(--amarelo-color);
     border-color: var(--amarelo-color);
 }
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle .hamb-line{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--branco-color);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
 /* ==========================================================
    RESPONSIVIDADE
@@ -1328,38 +1350,16 @@ header{
     }
 }
 
-.menu-toggle{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    width: 32px;
-    height: 32px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.menu-toggle .linha{
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: var(--branco-color);
-    border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
 
 /* Estado aberto: transforma as 3 linhas em um X */
-.menu-toggle.aberto .linha:nth-child(1){
+.menu-toggle.aberto .hamb-line:nth-child(1){
     transform: translateY(9px) rotate(45deg);
 }
 
-.menu-toggle.aberto .linha:nth-child(2){
+.menu-toggle.aberto .hamb-line:nth-child(2){
     opacity: 0;
 }
 
-.menu-toggle.aberto .linha:nth-child(3){
+.menu-toggle.aberto .hamb-line:nth-child(3){
     transform: translateY(-9px) rotate(-45deg);
 }
