@@ -1044,12 +1044,12 @@ header{
     .inicio{
         height: auto;
         min-height: 100vh;
-        padding: 6rem 1.5rem 3rem;
+        padding: 6rem 3.5rem 8rem;
     }
 
     .bemvindo{
         font-size: 20px;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .igreja{
