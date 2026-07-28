@@ -7,9 +7,19 @@
     box-sizing: border-box;
 }
 
+html{
+    background: var(--navbar--color);
+}
+
+html,
+body{
+    overscroll-behavior-y: none;
+}
+
 :root{
     /*cores início*/
     --font-main:'Times New Roman', Times, serif;
+    --navbar--color:#0D1427;
     --text-color:#000;
     --item-color: #B3B3B3;
     --item-colorhover: #FFD663;
@@ -50,7 +60,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:#0D1427 ;
+    background:var(--navbar--color) ;
     width: 100%;
     height: 6rem;
     padding: 2rem 1rem;    
