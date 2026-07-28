@@ -34,7 +34,46 @@ navLinks.forEach(function (link) {
         });
 
         link.classList.add('link-selecionado');
-
         fecharMenu();
     });
 });
+
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+const formulario = document.getElementById('meuForm');
+const mensagemSucesso = document.getElementById('mensagemSucesso');
+const iframe = document.getElementById('formulario_oculto');
+
+if (formulario && mensagemSucesso && iframe) {
+
+    formulario.addEventListener('submit', function () {
+
+        const botao = document.getElementById('botaoEnviar');
+
+        botao.disabled = true;
+        botao.textContent = 'ENVIANDO...';
+
+    });
+
+    iframe.addEventListener('load', function () {
+
+        formulario.reset();
+
+        mensagemSucesso.style.display = 'block';
+        mensagemSucesso.textContent = 'Mensagem enviada com sucesso!';
+
+        const botao = document.getElementById('botaoEnviar');
+
+        botao.disabled = false;
+        botao.textContent = 'ENVIAR MENSAGEM';
+
+        setTimeout(function () {
+            mensagemSucesso.style.display = 'none';
+        }, 5000);
+
+    });
+
+}
