@@ -1004,7 +1004,6 @@ header{
     .ieq{
         font-size: 12px !important;
         line-height: 1;
-        overflow: visible;
         text-align:center;
     }
 
@@ -1102,9 +1101,8 @@ header{
 
     .igreja{
         width: 100%;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 1.2;
-        max-width: 500px; /* ajuste o valor conforme desejar */
         margin: 0 auto;
         text-align: center;
         margin-bottom: 2rem;
@@ -1125,7 +1123,7 @@ header{
 
     .botaoinicio1,
     .botaoinicio2{
-        width: 80%;
+        width: 100%;
         font-size: 16px;
     }
 
@@ -1394,17 +1392,7 @@ header{
 /* ---------- MOBILE PEQUENO (até 480px) ---------- */
 @media (max-width: 480px){
 
- 
-    .igreja{
-        width: 100%;
-        font-size: 35px;
-        line-height: 1.2;
-        max-width: 320px; /* ajuste o valor conforme desejar */
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .ieq{
+     .ieq{
         justify-content:center;
     }
 
