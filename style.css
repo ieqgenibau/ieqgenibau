@@ -1002,10 +1002,10 @@ header{
     }
 
     .ieq{
-        font-size: 12px;
+        font-size: 12px !important;
         line-height: 1;
-        white-space: nowrap;
         overflow: visible;
+        text-align:center;
     }
 
     .menu-toggle{
@@ -1397,11 +1397,15 @@ header{
  
     .igreja{
         width: 100%;
-        font-size: 40px;
+        font-size: 37px;
         line-height: 1.2;
-        max-width: 1000px; /* ajuste o valor conforme desejar */
+        max-width: 320px; /* ajuste o valor conforme desejar */
         margin: 0 auto;
         text-align: center;
+    }
+
+    .ieq{
+        justify-content:center;
     }
 
     .bemvindo{
