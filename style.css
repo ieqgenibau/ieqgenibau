@@ -295,6 +295,11 @@ header{
     display: flex;       
 }
 
+.botaofaleconosco a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .faleconosco{
     display: flex;
     align-items: center;
