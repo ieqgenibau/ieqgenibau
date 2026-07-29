@@ -979,6 +979,7 @@ header{
     body{
         margin-top: 4rem;
         overflow-x: hidden;
+        width: 100%;
     }
 
     .nav-bar{
